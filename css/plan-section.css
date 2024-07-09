@@ -25,6 +25,9 @@
   margin-top: 16px;
 }
 .plan-header_btn {
+  border: 1px solid rgb(141, 211, 187);
+  border-radius: 4px;
+  padding: 8px 16px;
 }
 .countries-cards_row {
   display: grid;
@@ -66,8 +69,82 @@
 .countries-item {
 }
 .plan-flights-hotels {
+  gap: 24px;
+  margin-top: 80px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .plan-fligts {
+  background-image: url(../assets/plan-images/plan-flights_img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 604px;
+  height: 559px;
+  text-align: center;
+  position: relative;
+  border-radius: 20px;
 }
 .plan-hotels {
+  background-image: url(../assets/plan-images/plan-htels_img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 604px;
+  height: 559px;
+  position: relative;
+  text-align: center;
+  border-radius: 20px;
+}
+.div {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  right: 0;
+}
+.plan-flights_title {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 51px;
+  letter-spacing: 0%;
+}
+.plan-flights_text {
+  margin-top: 8px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+.plan-flights_btn,
+.show-flights_btn {
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .plan-header-title {
+    font-size: 22px;
+    line-height: 20px;
+  }
+
+  .plan-header-text {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 10px;
+    line-height: 10px;
+  }
+  .plan-flights_title {
+    font-size: 30px;
+    line-height: 21px;
+  }
+  .plan-flights_text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .plan-hotels,
+  .plan-fligts {
+    width: 90%;
+    height: 400px;
+  }
 }

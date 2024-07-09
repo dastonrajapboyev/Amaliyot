@@ -1,0 +1,118 @@
+.review-section {
+  /* width: 1232px; */
+  margin: 70px auto 0 auto;
+  max-width: 100%;
+}
+.review-section .plan-trip_header {
+  width: 1232px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.review-cards_row {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
+  grid-gap: 20px;
+  row-gap: 40px;
+  justify-items: center;
+}
+.review-card {
+  width: 100%;
+  max-width: 425px;
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 2px 4px 16px 0px rgba(17, 34, 17, 0.1);
+  background: rgb(255, 255, 255);
+}
+.review-cards_col {
+  width: 100%;
+  max-width: 425px;
+  border-radius: 20px;
+  -webkit-box-shadow: 21px 20px 0px 0px rgba(141, 211, 187);
+  -moz-box-shadow: 21px 20px 0px 0px rgba(141, 211, 187);
+  box-shadow: 21px 20px 0px 0px rgba(141, 211, 187);
+}
+.review-card_title {
+  color: rgb(17, 34, 17);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0%;
+}
+.review-card_text {
+  color: rgb(17, 34, 17);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0%;
+  margin-top: 16px;
+}
+.review-card_btn {
+  color: rgb(17, 34, 17);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: right;
+  margin-top: 12px;
+}
+.review-card_stars {
+  margin-top: 17.5px;
+}
+.review-card_person {
+  color: rgb(17, 34, 17);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0%;
+}
+.review-card_studio {
+  margin-top: 4px;
+  color: rgb(17, 34, 17);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0%;
+}
+.review-card_company {
+  gap: 10px;
+  margin-top: 12px;
+}
+.company-name {
+  color: rgb(17, 34, 17);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0%;
+  opacity: 0.4;
+}
+.review-card_img {
+  margin-top: 44px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .review-card {
+    max-width: 325px;
+  }
+  .review-cards_col {
+    max-width: 325px;
+  }
+  .review-card_img {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  .review-card_title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .review-card_text {
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 10px;
+  }
+  .review-card_btn {
+    margin-top: 10px;
+  }
+}
