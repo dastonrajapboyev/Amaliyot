@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url(./css/flights.css);
+@import url(./css/plan-section.css);
+:root {
+  --Font-family: "Montserrat", sans-serif;
+  --White-color: #fff;
+
+  --main-bg-color: rgb(141, 211, 187);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: var(--Font-family);
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.pointer {
+  cursor: pointer;
+}
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.hero {
+  margin-top: 30px;
+  padding: 30px 0px 0 0px;
+  background-image: linear-gradient(
+      18deg,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(./assets/main-images/hero.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 24px;
+  max-width: 100%;
+  height: 581px;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  padding: 0 20px;
+}
+
+.flight-info {
+  width: 100%;
+  color: var(--White-color);
+  gap: 13px;
+  flex: 0 0 20%;
+}
+.logo {
+  flex: 0 0 20%;
+}
+.find-flight,
+.find-stays {
+  gap: 10px;
+}
+
+.right-column.show {
+  display: flex;
+  justify-content: center;
+}
+
+.right-column {
+  gap: 20px;
+}
+
+.sign-in {
+  color: var(--White-color);
+}
+
+.login {
+  padding: 10px 24px;
+  border-radius: 8px;
+  background-color: var(--White-color);
+  color: #000;
+}
+
+.burger-menu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.burger-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bar {
+  width: 100%;
+  height: 2px;
+  background-color: var(--White-color);
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.burger-menu.active .bar:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+}
+
+.burger-menu.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.active .bar:nth-child(3) {
+  transform: translateY(-5px) rotate(-45deg);
+}
+
+/* =========== */
+.hero-info-col {
+  text-align: center;
+  margin-top: 90px;
+}
+
+.hero-subtitle {
+  color: var(--White-color);
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 57px;
+}
+
+.hero-title {
+  color: var(--White-color);
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 101px;
+  letter-spacing: 0%;
+}
+
+.hero-info {
+  color: var(--White-color);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+.burger-menu {
+  display: none;
+}
+@media (max-width: 768px) {
+  .burger-menu {
+    display: block;
+    z-index: 200;
+  }
+  .flight-info.show {
+    display: flex;
+    margin-top: 100px;
+  }
+  .flight-info {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    background-color: #343a40;
+    padding: 100px;
+    gap: 15px;
+    z-index: 1;
+    transition: transform 0.3s ease;
+    transform: translateY(-100%);
+  }
+  .right-column {
+    display: none;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    transition: transform 0.3s ease;
+    transform: translateY(-100%);
+  }
+  .right-column.show {
+    max-width: 100%;
+  }
+  .burger-menu.active + .flight-info {
+    transform: translateY(0);
+  }
+  .logo {
+    flex: 0 0 60%;
+  }
+
+  .hero-subtitle {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .hero-title {
+    font-size: 42px;
+    line-height: 71px;
+  }
+
+  .hero-info {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

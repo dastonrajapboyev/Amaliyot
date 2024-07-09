@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="hero">
+        <header class="header">
+          <div class="flight-info flex">
+            <div class="find-flight flex pointer">
+              <img
+                src="./assets/icons/header-icons/plane.svg"
+                alt="find-flight icon" />
+              Find Flight
+            </div>
+            <div class="find-stays flex pointer">
+              <img
+                src="./assets/icons/header-icons/ion_bed.svg"
+                alt="find-stays icon" />
+              Find Stays
+            </div>
+          </div>
+          <div class="logo pointer">
+            <img src="./assets/main-images/Logo.png" alt="Logo" />
+          </div>
+          <div class="right-column flex">
+            <a class="sign-in" href="#signin">Sign In</a>
+            <a class="login" href="#login">Login</a>
+          </div>
+          <div class="burger-menu">
+            <div class="burger-icon">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </header>
+        <div class="hero-info-col">
+          <div class="hero-subtitle">Helping Others</div>
+          <div class="hero-title">Live & Travel</div>
+          <div class="hero-info">Special offers to suit your plan</div>
+        </div>
+      </section>
+
+      <!-- flights section -->
+
+      <section class="flights-card">
+        <div class="flights-card_header flex">
+          <div class="item item-active flex">
+            <img
+              src="./assets/icons/flights-icons/dark-plane.svg"
+              alt="plane icon" />
+            Flights
+          </div>
+          <div class="line"></div>
+          <div class="item flex">
+            <img
+              src="./assets/icons/flights-icons/dark-bed.svg"
+              alt="plane icon" />
+            Stays
+          </div>
+        </div>
+        <div class="flights-card_inputs">
+          <form class="form flex">
+            <div class="flights-inputs-row">
+              <label for="time">From - To</label>
+              <div class="first-input flex">
+                <input type="text" placeholder="Lahore - Karachi" />
+                <img
+                  src="./assets/icons/flights-icons/ion_swap-horizontal.svg"
+                  alt="icon" />
+              </div>
+            </div>
+
+            <div class="flights-inputs-row">
+              <label for="fromTo">Trip</label>
+              <select id="fromTo" name="fromTo">
+                <option value="ny-la">New York to Los Angeles</option>
+                <option value="chi-mia">Chicago to Miami</option>
+                <option value="sf-sea">San Francisco to Seattle</option>
+                <option value="bos-dc">Boston to Washington D.C.</option>
+              </select>
+            </div>
+
+            <div class="flights-inputs-row">
+              <label for="tripReturn">Depart- Return</label>
+              <select id="tripReturn" name="tripReturn">
+                <option value="oneway">One-way</option>
+                <option value="roundtrip">Round trip</option>
+              </select>
+            </div>
+
+            <div class="flights-inputs-row">
+              <label for="passengers">Passenger - Class</label>
+              <select id="passengers" name="passengers">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4plus">4 or more</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="flights-card_footer">
+          <button class="add-promo_codeBtn">+ Add Promo Code</button>
+          <button class="show-flights_btn">
+            <img
+              src="./assets/icons/flights-icons/Paper Plane.svg"
+              alt="plane icon" />
+            Show Flights
+          </button>
+        </div>
+      </section>
+      <!-- end offlights section -->
+
+      <section class="plan-trip">
+        <div class="plan-trip_header flex">
+          <div class="plan-header_info">
+            <div class="plan-header-title">Plan your perfect trip</div>
+            <div class="plan-header-text">
+              Search Flights & Places Hire to our most popular destinations
+            </div>
+          </div>
+          <div class="plan-header_btn pointer">see more places</div>
+        </div>
+        <div class="countries-cards_row">
+          <div class="countries-card">
+            <img
+              src="./assets/plan-images/turkey.png"
+              alt="countries-card_img"
+              class="countries-card_img" />
+            <div class="countries_info">
+              <div class="countries-name">Istanbul, Turkey</div>
+              <div class="countries-info_items flex">
+                <div class="countries-item">Flights</div>
+                <div class="countries-item">Hotels</div>
+                <div class="countries-item">Resorts</div>
+              </div>
+            </div>
+          </div>
+          <div class="countries-card">
+            <img
+              src="./assets/plan-images/turkey.png"
+              alt="countries-card_img"
+              class="countries-card_img" />
+            <div class="countries_info">
+              <div class="countries-name">Istanbul, Turkey</div>
+              <div class="countries-info_items flex">
+                <div class="countries-item">Flights</div>
+                <div class="countries-item">Hotels</div>
+                <div class="countries-item">Resorts</div>
+              </div>
+            </div>
+          </div>
+          <div class="countries-card">
+            <img
+              src="./assets/plan-images/turkey.png"
+              alt="countries-card_img"
+              class="countries-card_img" />
+            <div class="countries_info">
+              <div class="countries-name">Istanbul, Turkey</div>
+              <div class="countries-info_items flex">
+                <div class="countries-item">Flights</div>
+                <div class="countries-item">Hotels</div>
+                <div class="countries-item">Resorts</div>
+              </div>
+            </div>
+          </div>
+          <div class="countries-card">
+            <img
+              src="./assets/plan-images/turkey.png"
+              alt="countries-card_img"
+              class="countries-card_img" />
+            <div class="countries_info">
+              <div class="countries-name">Istanbul, Turkey</div>
+              <div class="countries-info_items flex">
+                <div class="countries-item">Flights</div>
+                <div class="countries-item">Hotels</div>
+                <div class="countries-item">Resorts</div>
+              </div>
+            </div>
+          </div>
+          <div class="countries-card">
+            <img
+              src="./assets/plan-images/turkey.png"
+              alt="countries-card_img"
+              class="countries-card_img" />
+            <div class="countries_info">
+              <div class="countries-name">Istanbul, Turkey</div>
+              <div class="countries-info_items flex">
+                <div class="countries-item">Flights</div>
+                <div class="countries-item">Hotels</div>
+                <div class="countries-item">Resorts</div>
+              </div>
+            </div>
+          </div>
+          <div class="countries-card">
+            <img
+              src="./assets/plan-images/turkey.png"
+              alt="countries-card_img"
+              class="countries-card_img" />
+            <div class="countries_info">
+              <div class="countries-name">Istanbul, Turkey</div>
+              <div class="countries-info_items flex">
+                <div class="countries-item">Flights</div>
+                <div class="countries-item">Hotels</div>
+                <div class="countries-item">Resorts</div>
+              </div>
+            </div>
+          </div>
+          <div class="countries-card">
+            <img
+              src="./assets/plan-images/turkey.png"
+              alt="countries-card_img"
+              class="countries-card_img" />
+            <div class="countries_info">
+              <div class="countries-name">Istanbul, Turkey</div>
+              <div class="countries-info_items flex">
+                <div class="countries-item">Flights</div>
+                <div class="countries-item">Hotels</div>
+                <div class="countries-item">Resorts</div>
+              </div>
+            </div>
+          </div>
+          <div class="countries-card">
+            <img
+              src="./assets/plan-images/turkey.png"
+              alt="countries-card_img"
+              class="countries-card_img" />
+            <div class="countries_info">
+              <div class="countries-name">Istanbul, Turkey</div>
+              <div class="countries-info_items flex">
+                <div class="countries-item">Flights</div>
+                <div class="countries-item">Hotels</div>
+                <div class="countries-item">Resorts</div>
+              </div>
+            </div>
+          </div>
+          <div class="countries-card">
+            <img
+              src="./assets/plan-images/turkey.png"
+              alt="countries-card_img"
+              class="countries-card_img" />
+            <div class="countries_info">
+              <div class="countries-name">Istanbul, Turkey</div>
+              <div class="countries-info_items flex">
+                <div class="countries-item">Flights</div>
+                <div class="countries-item">Hotels</div>
+                <div class="countries-item">Resorts</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="plan-flights-hotels">
+          <div class="plan-fligts"></div>
+          <div class="plan-hotels"></div>
+        </div>
+      </section>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
