@@ -6,10 +6,11 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.footer-logo_socials {
-}
+.footer-logo_socials,
 .footer-logo {
+  cursor: pointer;
 }
+
 .footer-socials {
   gap: 13px;
   margin-top: 24px;
@@ -28,9 +29,11 @@
   font-weight: 700;
   line-height: 20px;
   letter-spacing: 0%;
+  cursor: pointer;
 }
 .footer-col-item {
   margin: 16px 0;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {

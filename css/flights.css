@@ -2,7 +2,7 @@
   position: relative;
   width: 1232px;
   max-width: 96%;
-  margin: -100px auto 0 auto;
+  margin: -50px auto 0 auto;
   padding: 32px;
   display: flex;
   flex-direction: column;
@@ -77,8 +77,10 @@ input {
   border: none;
   background-color: transparent;
   margin-right: 20px;
+  cursor: pointer;
 }
 .show-flights_btn {
+  cursor: pointer;
   border: none;
   padding: 8px 16px 8px 16px;
   border-radius: 4px;

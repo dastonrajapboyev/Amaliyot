@@ -16,10 +16,12 @@
   grid-gap: 20px;
   row-gap: 40px;
   justify-items: center;
+  justify-content: center;
 }
 .review-card {
   width: 100%;
   max-width: 425px;
+  margin: 0 auto;
   padding: 24px;
   border-radius: 20px;
   box-shadow: 2px 4px 16px 0px rgba(17, 34, 17, 0.1);

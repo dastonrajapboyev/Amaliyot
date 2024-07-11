@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper wrapper-2">
+      <section class="hero nd-header">
+        <header class="header main-containe header-2">
+          <div class="flight-info flex">
+            <div class="find-flight flex pointer">
+              <img
+                src="../assets/icons/flights-icons/dark-plane.svg"
+                alt="find-flight icon" />
+              Find Flight
+            </div>
+            <div class="find-stays flex pointer">
+              <img
+                src="../assets/icons/flights-icons/dark-bed.svg"
+                alt="find-stays icon" />
+              Find Stays
+            </div>
+          </div>
+          <div class="logo pointer">
+            <img src="../assets/Logo-dark.png" alt="Logo" />
+          </div>
+          <div class="right-column flex">
+            <a class="sign-in" href="#signin">Sign In</a>
+            <a class="login" href="#login">Login</a>
+          </div>
+          <div class="burger-menu">
+            <div class="burger-icon">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </header>
+        <div class="hero-info-col">
+          <!-- <div class="hero-subtitle">Helping Others</div>
+          <div class="hero-title">Live & Travel</div>
+          <div class="hero-info">Special offers to suit your plan</div> -->
+        </div>
+      </section>
+
+      <!-- flights section -->
+
+      <section class="flights-card">
+        <div class="flights-card_header flex">
+          <div class="item item-active flex">
+            <img
+              src="../assets/icons/flights-icons/dark-plane.svg"
+              alt="plane icon" />
+            Flights
+          </div>
+          <div class="line"></div>
+          <div class="item flex">
+            <img
+              src="../assets/icons/flights-icons/dark-bed.svg"
+              alt="plane icon" />
+            Stays
+          </div>
+        </div>
+        <div class="flights-card_inputs">
+          <form class="form flex">
+            <div class="flights-inputs-row">
+              <label for="time">From - To</label>
+              <div class="first-input flex">
+                <input type="text" placeholder="Lahore - Karachi" />
+                <img
+                  src="../assets/icons/flights-icons/ion_swap-horizontal.svg"
+                  alt="icon" />
+              </div>
+            </div>
+
+            <div class="flights-inputs-row">
+              <label for="fromTo">Trip</label>
+              <select id="fromTo" name="fromTo">
+                <option value="ny-la">New York to Los Angeles</option>
+                <option value="chi-mia">Chicago to Miami</option>
+                <option value="sf-sea">San Francisco to Seattle</option>
+                <option value="bos-dc">Boston to Washington D.C.</option>
+              </select>
+            </div>
+
+            <div class="flights-inputs-row">
+              <label for="tripReturn">Depart- Return</label>
+              <select id="tripReturn" name="tripReturn">
+                <option value="oneway">One-way</option>
+                <option value="roundtrip">Round trip</option>
+              </select>
+            </div>
+
+            <div class="flights-inputs-row">
+              <label for="passengers">Passenger - Class</label>
+              <select id="passengers" name="passengers">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4plus">4 or more</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="flights-card_footer">
+          <button class="add-promo_codeBtn">+ Add Promo Code</button>
+          <button class="show-flights_btn">
+            <img
+              src="../assets/icons/flights-icons/Paper Plane.svg"
+              alt="plane icon" />
+            Show Flights
+          </button>
+        </div>
+      </section>
+      <!-- end of flights section -->
+
+      <!-- address section -->
+
+      <section class="address-map_section">
+        <div class="plan-trip_header flex main-container">
+          <div class="plan-header_info">
+            <div class="plan-header-title">Let's go places together</div>
+            <div class="plan-header-text">
+              What people says about Golobe facilities
+            </div>
+          </div>
+          <div class="plan-header_btn pointer">See All</div>
+        </div>
+        <img src="../assets/find-flights-section-img/map.png" alt="" />
+      </section>
+      <!-- end of address section -->
+
+      <!-- fall into travel section -->
+
+      <section class="fall-travel_section main-container">
+        <div class="plan-trip_header flex">
+          <div class="plan-header_info">
+            <div class="plan-header-title">Fall into travel</div>
+            <div class="plan-header-text">
+              What people says about Golobe facilities
+            </div>
+          </div>
+          <div class="plan-header_btn pointer">See All</div>
+        </div>
+
+        <div class="travel-cards_row">
+          <!-- <div class="travel-card"></div> -->
+          <div class="plan-flights-hotels flex grid">
+            <div class="plan-fligts travel-card">
+              <div class="div">
+                <div class="div-2">
+                  <div class="travel-card_info">
+                    <div class="plan-flights_title">Flights</div>
+                    <div class="plan-flights_text">
+                      Search Flights & Places Hire to our most popular
+                      destinations
+                    </div>
+                  </div>
+                  <div class="travel-card_price">$ 700</div>
+                </div>
+                <div class="plan-flights_btn">
+                  <button
+                    style="width: 90%"
+                    class="show-flights_btn travel-btn pointer">
+                    Show Flights
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="plan-fligts travel-card travel-card-2">
+              <div class="div">
+                <div class="div-2">
+                  <div class="travel-card_info">
+                    <div class="plan-flights_title">Flights</div>
+                    <div class="plan-flights_text">
+                      Search Flights & Places Hire to our most popular
+                      destinations
+                    </div>
+                  </div>
+                  <div class="travel-card_price">$ 700</div>
+                </div>
+                <div class="plan-flights_btn">
+                  <button
+                    style="width: 90%; background-image: none"
+                    class="show-flights_btn travel-btn travel-card-3 pointer">
+                    Show Flights
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="plan-fligts travel-card travel-card-3">
+              <div class="div">
+                <div class="div-2">
+                  <div class="travel-card_info">
+                    <div class="plan-flights_title">Flights</div>
+                    <div class="plan-flights_text">
+                      Search Flights & Places Hire to our most popular
+                      destinations
+                    </div>
+                  </div>
+                  <div class="travel-card_price">$ 700</div>
+                </div>
+                <div class="plan-flights_btn">
+                  <button
+                    style="width: 90%"
+                    class="show-flights_btn travel-btn pointer">
+                    Show Flights
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="plan-fligts travel-card travel-card-4">
+              <div class="div">
+                <div class="div-2">
+                  <div class="travel-card_info">
+                    <div class="plan-flights_title">Flights</div>
+                    <div class="plan-flights_text">
+                      Search Flights & Places Hire to our most popular
+                      destinations
+                    </div>
+                  </div>
+                  <div class="travel-card_price">$ 700</div>
+                </div>
+                <div class="plan-flights_btn">
+                  <button
+                    style="width: 90%"
+                    class="show-flights_btn travel-btn pointer">
+                    Show Flights
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="plan-travel-2 main-container">
+        <div class="plan-trip_header flex">
+          <div class="plan-header_info">
+            <div class="plan-header-title">Fall into travel</div>
+            <div class="plan-header-text">
+              What people says about Golobe facilities
+            </div>
+          </div>
+          <div class="plan-header_btn pointer">See All</div>
+        </div>
+
+        <div class="plan-travel_container">
+          <div class="text-block">
+            <h1>Backpacking Sri Lanka</h1>
+            <p>
+              Traveling is a unique experience as it’s the best way to unplug
+              from the pushes and pulls of daily life. It helps us to forget
+              about our problems, frustrations, and fears at home. During our
+              journey, we experience life in different ways. We explore new
+              places, cultures, cuisines, traditions, and ways of living.
+            </p>
+            <button>Book Flight</button>
+          </div>
+          <div class="image-block">
+            <img
+              src="../assets/plan-travel-images/01.png"
+              alt="Sri Lanka Image 1" />
+            <img
+              src="../assets/plan-travel-images/02.png"
+              alt="Sri Lanka Image 2" />
+            <img
+              src="../assets/plan-travel-images/03.png"
+              alt="Sri Lanka Image 3" />
+            <img
+              src="../assets/plan-travel-images/Rectangle 3.png"
+              alt="Sri Lanka Image 4" />
+          </div>
+        </div>
+      </section>
+      <!-- end of  fall into travel section -->
+
+      <!-- subscribe section -->
+      <section class="subscribe">
+        <div class="subscribe-left_side">
+          <div class="subscribe-title">Subscribe Newsletter</div>
+          <div class="subscribe-subtitle">The Travel</div>
+          <div class="subscribe-text">
+            Get inspired! Receive travel discounts, tips and behind the scenes
+            stories.
+          </div>
+          <div class="subscribe_input-btn">
+            <input class="subscribe-input" placeholder="Your email address" />
+            <button class="subscribe-btn pointer">Subscribe</button>
+          </div>
+        </div>
+        <div class="subscribe-right_side">
+          <img
+            src="../assets/subscribe-images/emojione-v1_open-mailbox-with-lowered-flag.png"
+            alt="subscribe-image" />
+        </div>
+      </section>
+      <!-- end of subscribe section -->
+
+      <!--  footer -->
+      <footer class="footer flex">
+        <div class="footer-logo_socials">
+          <div class="footer-logo">
+            <img src="../assets/footer-images/Logo-dark.png" alt="logo" />
+          </div>
+          <div class="footer-socials flex">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+        <div class="footer-columns flex">
+          <div class="footer-col">
+            <div class="footer-col_title">Our Destinations</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Turtkul</div>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col_title">Our Destinations</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Turtkul</div>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col_title">Our Destinations</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Turtkul</div>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col_title">Our Destinations</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Turtkul</div>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col_title">Our Destinations</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Turtkul</div>
+          </div>
+        </div>
+      </footer>
+      <!-- end of footer -->
+    </div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

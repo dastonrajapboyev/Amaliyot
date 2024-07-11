@@ -4,6 +4,7 @@
 @import url(./css/review-section.css);
 @import url(./css/subscribe-section.css);
 @import url(./css/footer.css);
+@import url(./css/find-flights.css);
 :root {
   --Font-family: "Montserrat", sans-serif;
   --White-color: #fff;
@@ -31,6 +32,11 @@ body {
 }
 .wrapper {
   max-width: 1440px;
+  margin: 0 auto;
+}
+.main-container {
+  max-width: 1232px;
+  width: 100%;
   margin: 0 auto;
 }
 .hero {
@@ -63,8 +69,8 @@ body {
 .flight-info {
   width: 100%;
   color: var(--White-color);
-  gap: 13px;
-  flex: 0 0 20%;
+  gap: 10px;
+  flex: 0 0 30%;
 }
 .logo {
   flex: 0 0 20%;

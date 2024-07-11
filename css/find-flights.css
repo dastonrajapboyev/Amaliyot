@@ -1,0 +1,169 @@
+.address-map_section {
+  margin-top: 80px;
+}
+.plan-trip_header {
+  margin-top: 80px;
+}
+.wrapper-2 .hero {
+  margin-top: 0;
+  background-image: none;
+}
+.wrapper-2 .hero-info-col {
+  background-image: url(../assets/main-images/hero-2.png);
+  background-size: cover;
+  height: 551px;
+}
+.nd-header .header-2 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 36px 100px;
+  background-color: var(--White-color);
+}
+.header-2 .flight-info,
+.header-2 .sign-in {
+  color: #000 !important;
+}
+.header-2 .login {
+  background-color: #000;
+  color: var(--White-color);
+}
+.header-2 .bar {
+  background-color: #000;
+}
+.header-2 .flight-info {
+  background-color: var(--White-color);
+  top: 100px;
+  left: 0;
+  right: 0;
+  gap: 15px;
+  z-index: 1;
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+  transform: translateY(-100%);
+}
+.header-2 .right-column {
+  top: 180px;
+}
+.address-map_section img {
+  margin-top: 24px;
+  max-width: 100%;
+  padding: 0 20px;
+}
+.grid {
+  display: grid;
+}
+.travel-card {
+  background-image: url(../assets/find-flights-section-img/01.png);
+  width: 296px;
+  max-width: 100%;
+  height: 420px;
+  cursor: pointer;
+}
+.travel-card-2 {
+  background-image: url(../assets/find-flights-section-img/02.png);
+}
+.travel-card-3 {
+  background-image: url(../assets/find-flights-section-img/03.png);
+}
+.travel-card-4 {
+  background-image: url(../assets/find-flights-section-img/04.png);
+}
+.div-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.travel-card_info .plan-flights_title {
+  font-size: 22px;
+  text-align: left;
+  padding-left: 10px;
+}
+.travel-card_info .plan-flights_text {
+  width: 200px;
+  font-size: 12px;
+  margin-top: 0px;
+}
+.travel-card_price {
+  color: var(--White-color);
+  font-size: 14px;
+  padding-right: 10px;
+}
+.fall-travel_section {
+  margin-top: 80px;
+}
+.grid {
+  display: flex;
+}
+
+/* plan travel 2 */
+
+.plan-travel-2 {
+  margin-top: 80px;
+}
+
+.plan-travel_container {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 20px;
+  padding: 20px;
+}
+.text-block {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  background-color: #e0f7e0;
+  padding: 20px;
+  border-radius: 10px;
+  height: 424px;
+  max-height: auto;
+}
+
+.text-block h1 {
+  flex: 0 0 20%;
+  margin-top: 0;
+}
+
+.text-block p {
+  flex: 0 0 60%;
+  margin-bottom: 20px;
+}
+
+.text-block button {
+  background-color: var(--White-color);
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.image-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.image-block img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+  .plan-travel_container {
+    grid-template-columns: 1fr;
+  }
+
+  .image-block {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .image-block {
+    grid-template-columns: 1fr;
+  }
+}
