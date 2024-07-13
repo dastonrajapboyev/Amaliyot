@@ -6,6 +6,7 @@
 @import url(./css/footer.css);
 @import url(./css/find-flights.css);
 @import url(./css/flights-detail.css);
+@import url(./css/view-detail.css);
 :root {
   --Font-family: "Montserrat", sans-serif;
   --White-color: #fff;
@@ -17,6 +18,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 a {
   text-decoration: none;

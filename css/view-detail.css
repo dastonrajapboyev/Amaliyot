@@ -1,0 +1,267 @@
+.view-detail .container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1232px;
+  margin: 100px auto 0 auto;
+  padding: 20px;
+}
+.view-detail_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  color: #ff5a5f;
+  margin-bottom: 10px;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: #ff5a5f;
+}
+.second-link {
+  color: #000;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+.view-detail-left {
+  display: flex;
+  flex-direction: column;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.heading h1 {
+  font-size: 24px;
+  margin: 0;
+}
+.heading .num {
+  display: inline;
+}
+.view-detail-right .price {
+  font-size: 24px;
+  color: #ff5a5f;
+}
+.view-detail-right img {
+  border: 1px solid var(--main-bg-color);
+  padding: 8px;
+}
+.iconsandBtn {
+  margin-top: 10px;
+  align-items: center;
+  gap: 20px;
+}
+.location {
+  color: #888;
+  font-size: 14px;
+}
+
+.rating {
+  font-size: 16px;
+  color: #4caf50;
+  margin-top: 10px;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.policies {
+  margin: 20px 0;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: var(--main-bg-color);
+}
+
+.features h2,
+.policies h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.features img,
+.policies img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.features .icons,
+.policies .icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+}
+.policies .icons div {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+/* .policies .icons div img {
+  width: 100%;
+  height: auto;
+  margin-right: 5px;
+} */
+.policies-div {
+  display: flex;
+}
+.policies-div img {
+  width: 20px;
+  height: 20px;
+}
+.class-selection {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.class-selection input {
+  width: 16px;
+  margin-right: 5px;
+}
+
+.book-now {
+  background-color: var(--main-bg-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book-now:hover {
+  background-color: rgb(182, 255, 229);
+}
+
+/*  */
+
+.dertail-cards {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1232px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.detail-header .date {
+  font-size: 16px;
+  color: #333;
+}
+
+.detail-header .duration {
+  font-size: 16px;
+  color: #333;
+}
+
+.detail-flight-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.detail-flight-info .airline {
+  display: flex;
+  align-items: center;
+}
+
+.detail-flight-info .airline img {
+  width: 262px;
+  height: 86px;
+  margin-right: 10px;
+}
+
+.detail-flight-info .airline .airline-name {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.detail-flight-info .airline .plane-type {
+  font-size: 14px;
+  color: #666;
+}
+
+.flight-times {
+  flex: 0 0 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.flight-times img {
+  margin: 10px;
+}
+
+.flight-times .time {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+.flight-times .airport {
+  font-size: 14px;
+  color: #666;
+}
+
+.detail-icons {
+  display: flex;
+  align-items: center;
+}
+
+.detail-icons img {
+  width: 24px;
+  height: 24px;
+  margin: 0 20px;
+}
+.hr-line {
+  height: 30px;
+  width: 2px;
+  background-color: #d7e2ee;
+}
+
+@media (max-width: 768px) {
+  .detail-flight-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .flight-times {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .flight-times .time {
+    margin: 10px 0;
+  }
+
+  .detail-icons {
+    margin-top: 20px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .detail-icons img {
+    margin: 0;
+  }
+}
