@@ -1,0 +1,254 @@
+.wrapper-3 .hero {
+  height: 0;
+}
+.wrapper-3 .form {
+  margin-top: 80px;
+}
+.search-icon {
+  padding: 12px 16px;
+  border-radius: 4px;
+  background-color: var(--main-bg-color);
+}
+.search-icon:hover {
+  background-color: rgb(182, 255, 229);
+}
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+.filters {
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.filters h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+.filter-group input[type="range"] {
+  width: 100%;
+}
+
+.range-values {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #999;
+}
+
+.rating-options,
+.airlines-options,
+.trips-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.rating-options div,
+.airlines-options div,
+.trips-options div {
+  gap: 5px;
+}
+
+.results {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.sort-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.sort-button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.sort-button:hover {
+  background-color: #f0f0f0;
+}
+
+.showing-info {
+  margin-bottom: 20px;
+  color: #e74c3c;
+}
+
+.flight-option {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.flight-info {
+  display: flex;
+  align-items: center;
+}
+
+.flight-info img {
+  object-fit: cover;
+}
+
+.flight-details {
+  margin-right: 20px;
+}
+
+.flight-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.view-deals {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.view-deals:hover {
+  background-color: #27ae60;
+}
+
+/*  */
+
+.flight-info-detail-right {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.reviews-and-price {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+}
+.num {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--main-bg-color);
+  padding: 4px 6px;
+}
+.reviews {
+  font-weight: bold;
+}
+.reviews span {
+  font-weight: normal;
+  font-size: 12px;
+}
+.price {
+  display: flex;
+  flex-direction: column;
+}
+.price span {
+  color: red;
+}
+.delivery-times {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+.times-and-place {
+  display: flex;
+  flex-wrap: wrap;
+}
+.times {
+  margin-left: 10px;
+  font-weight: bold;
+}
+.place-name {
+  margin-top: 10px;
+  flex: 1 1 30%;
+}
+
+.flying-time {
+  display: flex;
+  flex-direction: column;
+}
+.likes-btn {
+  gap: 20px;
+}
+.like {
+  border: 1px solid var(--main-bg-color);
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.like-btn {
+  background-color: var(--main-bg-color);
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.like-btn:hover {
+  background-color: rgb(182, 255, 229);
+}
+.results-btn {
+  width: 100%;
+  padding: 8px 0;
+  border-radius: 4px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+}
+.results-btn:hover {
+  background-color: #000000a5;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .filters {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .results {
+    margin-left: 0;
+  }
+  .reviews-and-price {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .num {
+    width: 40px;
+  }
+  .delivery-times {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

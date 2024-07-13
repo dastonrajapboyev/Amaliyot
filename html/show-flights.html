@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper wrapper-2 wrapper-3">
+      <section class="hero nd-header">
+        <header class="header main-containe header-2">
+          <div class="flight-info flex">
+            <div class="find-flight flex pointer">
+              <img
+                src="../assets/icons/flights-icons/dark-plane.svg"
+                alt="find-flight icon" />
+              Find Flight
+            </div>
+            <div class="find-stays flex pointer">
+              <img
+                src="../assets/icons/flights-icons/dark-bed.svg"
+                alt="find-stays icon" />
+              Find Stays
+            </div>
+          </div>
+          <div class="logo pointer">
+            <img src="../assets/Logo-dark.png" alt="Logo" />
+          </div>
+          <div class="right-column flex">
+            <a class="sign-in" href="#signin">Sign In</a>
+            <a class="login" href="#login">Login</a>
+          </div>
+          <div class="burger-menu">
+            <div class="burger-icon">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </header>
+      </section>
+
+      <!-- flights section -->
+
+      <section class="flights-card">
+        <div class="flights-card_inputs">
+          <form class="form flex">
+            <div class="flights-inputs-row">
+              <label for="time">From - To</label>
+              <div class="first-input flex">
+                <input type="text" placeholder="Lahore - Karachi" />
+                <img
+                  src="../assets/icons/flights-icons/ion_swap-horizontal.svg"
+                  alt="icon" />
+              </div>
+            </div>
+
+            <div class="flights-inputs-row">
+              <label for="fromTo">Trip</label>
+              <select id="fromTo" name="fromTo">
+                <option value="ny-la">New York to Los Angeles</option>
+                <option value="chi-mia">Chicago to Miami</option>
+                <option value="sf-sea">San Francisco to Seattle</option>
+                <option value="bos-dc">Boston to Washington D.C.</option>
+              </select>
+            </div>
+
+            <div class="flights-inputs-row">
+              <label for="tripReturn">Depart- Return</label>
+              <select id="tripReturn" name="tripReturn">
+                <option value="oneway">One-way</option>
+                <option value="roundtrip">Round trip</option>
+              </select>
+            </div>
+
+            <div class="flights-inputs-row">
+              <label for="passengers">Passenger - Class</label>
+              <select id="passengers" name="passengers">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4plus">4 or more</option>
+              </select>
+            </div>
+
+            <div class="search-icon">
+              <img
+                src="../assets/icons/flights-detail-icons/Search.svg"
+                alt="" />
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- end of flights section -->
+
+      <!--  -->
+      <div class="container">
+        <aside class="filters">
+          <h2>Filters</h2>
+          <div class="filter-group">
+            <label for="price-range">Price</label>
+            <input type="range" id="price-range" min="50" max="1200" />
+            <div class="range-values">
+              <span>$50</span>
+              <span>$1200</span>
+            </div>
+          </div>
+          <div class="filter-group">
+            <label for="departure-time">Departure Time</label>
+            <input type="range" id="departure-time" min="0" max="24" />
+            <div class="range-values">
+              <span>12:01 AM</span>
+              <span>11:56 PM</span>
+            </div>
+          </div>
+          <div class="filter-group">
+            <label>Rating</label>
+            <div class="rating-options">
+              <div>
+                <input type="checkbox" id="rating-0" value="0+" />
+                <label for="rating-0">0+</label>
+              </div>
+              <div>
+                <input type="checkbox" id="rating-1" value="1+" />
+                <label for="rating-1">1+</label>
+              </div>
+              <div>
+                <input type="checkbox" id="rating-2" value="2+" />
+                <label for="rating-2">2+</label>
+              </div>
+              <div>
+                <input type="checkbox" id="rating-3" value="3+" />
+                <label for="rating-3">3+</label>
+              </div>
+              <div>
+                <input type="checkbox" id="rating-4" value="4+" />
+                <label for="rating-4">4+</label>
+              </div>
+            </div>
+          </div>
+          <div class="filter-group">
+            <label>Airlines</label>
+            <div class="airlines-options">
+              <div>
+                <input type="checkbox" id="airline-emirates" value="Emirates" />
+                <label for="airline-emirates">Emirates</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="airline-flydubai"
+                  value="Fly Dubai" />
+                <label for="airline-flydubai">Fly Dubai</label>
+              </div>
+              <div>
+                <input type="checkbox" id="airline-qatar" value="Qatar" />
+                <label for="airline-qatar">Qatar</label>
+              </div>
+              <div>
+                <input type="checkbox" id="airline-etihad" value="Etihad" />
+                <label for="airline-etihad">Etihad</label>
+              </div>
+            </div>
+          </div>
+          <div class="filter-group">
+            <label>Trips</label>
+            <div class="trips-options">
+              <div>
+                <input type="checkbox" id="trip-roundtrip" value="Round trip" />
+                <label for="trip-roundtrip">Round trip</label>
+              </div>
+              <div>
+                <input type="checkbox" id="trip-oneway" value="One Way" />
+                <label for="trip-oneway">One Way</label>
+              </div>
+              <div>
+                <input type="checkbox" id="trip-multicity" value="Multi-City" />
+                <label for="trip-multicity">Multi-City</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="trip-flexible"
+                  value="My Dates Are Flexible" />
+                <label for="trip-flexible">My Dates Are Flexible</label>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <main class="results">
+          <div class="sort-options">
+            <button class="sort-button">Cheapest</button>
+            <button class="sort-button">Best</button>
+            <button class="sort-button">Quickest</button>
+            <button class="sort-button">Other sort</button>
+          </div>
+          <div class="showing-info">Showing 4 of 257 places</div>
+          <div class="flight-option">
+            <div class="flight-info">
+              <img
+                src="../assets/flight-detail-images/emirates.png"
+                alt="Emirates Logo" />
+              <div class="flight-details">
+                <h3>Emirates</h3>
+                <p>12:00 pm - 01:28 pm</p>
+                <p>Non-stop</p>
+                <p>2h 28m</p>
+              </div>
+            </div>
+
+            <div class="flight-info-detail-right">
+              <div class="reviews-and-price">
+                <div class="num">4.2</div>
+                <div class="reviews">Very Good <span>54 reviews</span></div>
+                <div class="price">startting from <span>$104</span></div>
+              </div>
+              <div class="delivery-times">
+                <div class="times-and-place">
+                  <input type="checkbox" style="width: 20px" />
+                  <div class="times">12:00 pm - 01:28 pm</div>
+                  <div class="place-name">Emirates</div>
+                </div>
+                <div class="non-stop">non stop</div>
+                <div class="flying-time">
+                  2h 28m
+                  <span>EWR-BNA</span>
+                </div>
+              </div>
+              <div class="delivery-times">
+                <div class="times-and-place">
+                  <input type="checkbox" style="width: 20px" />
+                  <div class="times">12:00 pm - 01:28 pm</div>
+                  <div class="place-name">Emirates</div>
+                </div>
+                <div class="non-stop">non stop</div>
+                <div class="flying-time">
+                  2h 28m
+                  <span>EWR-BNA</span>
+                </div>
+              </div>
+              <hr />
+              <div class="likes-btn flex">
+                <div class="like pointer">
+                  <img
+                    src="../assets/icons/flights-detail-icons/heart.svg"
+                    alt="icon" />
+                </div>
+                <div class="like-btn pointer">View Deals</div>
+              </div>
+            </div>
+          </div>
+          <div class="flight-option">
+            <div class="flight-info">
+              <img
+                src="../assets/flight-detail-images/dubai.png"
+                alt="Emirates Logo" />
+              <div class="flight-details">
+                <h3>Emirates</h3>
+                <p>12:00 pm - 01:28 pm</p>
+                <p>Non-stop</p>
+                <p>2h 28m</p>
+              </div>
+            </div>
+
+            <div class="flight-info-detail-right">
+              <div class="reviews-and-price">
+                <div class="num">4.2</div>
+                <div class="reviews">Very Good <span>54 reviews</span></div>
+                <div class="price">startting from <span>$104</span></div>
+              </div>
+              <div class="delivery-times">
+                <div class="times-and-place">
+                  <input type="checkbox" style="width: 20px" />
+                  <div class="times">12:00 pm - 01:28 pm</div>
+                  <div class="place-name">Emirates</div>
+                </div>
+                <div class="non-stop">non stop</div>
+                <div class="flying-time">
+                  2h 28m
+                  <span>EWR-BNA</span>
+                </div>
+              </div>
+              <div class="delivery-times">
+                <div class="times-and-place">
+                  <input type="checkbox" style="width: 20px" />
+                  <div class="times">12:00 pm - 01:28 pm</div>
+                  <div class="place-name">Emirates</div>
+                </div>
+                <div class="non-stop">non stop</div>
+                <div class="flying-time">
+                  2h 28m
+                  <span>EWR-BNA</span>
+                </div>
+              </div>
+              <hr />
+              <div class="likes-btn flex">
+                <div class="like pointer">
+                  <img
+                    src="../assets/icons/flights-detail-icons/heart.svg"
+                    alt="icon" />
+                </div>
+                <div class="like-btn pointer">View Deals</div>
+              </div>
+            </div>
+          </div>
+          <div class="flight-option">
+            <div class="flight-info">
+              <img
+                src="../assets/flight-detail-images/qatar.png"
+                alt="Emirates Logo" />
+              <div class="flight-details">
+                <h3>Emirates</h3>
+                <p>12:00 pm - 01:28 pm</p>
+                <p>Non-stop</p>
+                <p>2h 28m</p>
+              </div>
+            </div>
+
+            <div class="flight-info-detail-right">
+              <div class="reviews-and-price">
+                <div class="num">4.2</div>
+                <div class="reviews">Very Good <span>54 reviews</span></div>
+                <div class="price">startting from <span>$104</span></div>
+              </div>
+              <div class="delivery-times">
+                <div class="times-and-place">
+                  <input type="checkbox" style="width: 20px" />
+                  <div class="times">12:00 pm - 01:28 pm</div>
+                  <div class="place-name">Emirates</div>
+                </div>
+                <div class="non-stop">non stop</div>
+                <div class="flying-time">
+                  2h 28m
+                  <span>EWR-BNA</span>
+                </div>
+              </div>
+              <div class="delivery-times">
+                <div class="times-and-place">
+                  <input type="checkbox" style="width: 20px" />
+                  <div class="times">12:00 pm - 01:28 pm</div>
+                  <div class="place-name">Emirates</div>
+                </div>
+                <div class="non-stop">non stop</div>
+                <div class="flying-time">
+                  2h 28m
+                  <span>EWR-BNA</span>
+                </div>
+              </div>
+              <hr />
+              <div class="likes-btn flex">
+                <div class="like pointer">
+                  <img
+                    src="../assets/icons/flights-detail-icons/heart.svg"
+                    alt="icon" />
+                </div>
+                <div class="like-btn pointer">View Deals</div>
+              </div>
+            </div>
+          </div>
+          <div class="flight-option">
+            <div class="flight-info">
+              <img
+                src="../assets/flight-detail-images/etihad.png"
+                alt="Emirates Logo" />
+              <div class="flight-details">
+                <h3>Emirates</h3>
+                <p>12:00 pm - 01:28 pm</p>
+                <p>Non-stop</p>
+                <p>2h 28m</p>
+              </div>
+            </div>
+
+            <div class="flight-info-detail-right">
+              <div class="reviews-and-price">
+                <div class="num">4.2</div>
+                <div class="reviews">Very Good <span>54 reviews</span></div>
+                <div class="price">startting from <span>$104</span></div>
+              </div>
+              <div class="delivery-times">
+                <div class="times-and-place">
+                  <input type="checkbox" style="width: 20px" />
+                  <div class="times">12:00 pm - 01:28 pm</div>
+                  <div class="place-name">Emirates</div>
+                </div>
+                <div class="non-stop">non stop</div>
+                <div class="flying-time">
+                  2h 28m
+                  <span>EWR-BNA</span>
+                </div>
+              </div>
+              <div class="delivery-times">
+                <div class="times-and-place">
+                  <input type="checkbox" style="width: 20px" />
+                  <div class="times">12:00 pm - 01:28 pm</div>
+                  <div class="place-name">Emirates</div>
+                </div>
+                <div class="non-stop">non stop</div>
+                <div class="flying-time">
+                  2h 28m
+                  <span>EWR-BNA</span>
+                </div>
+              </div>
+              <hr />
+              <div class="likes-btn flex">
+                <div class="like pointer">
+                  <img
+                    src="../assets/icons/flights-detail-icons/heart.svg"
+                    alt="icon" />
+                </div>
+                <div class="like-btn pointer">View Deals</div>
+              </div>
+            </div>
+          </div>
+          <button class="results-btn">Show more results</button>
+        </main>
+      </div>
+
+      <!--  -->
+
+      <!-- subscribe section -->
+      <section class="subscribe">
+        <div class="subscribe-left_side">
+          <div class="subscribe-title">Subscribe Newsletter</div>
+          <div class="subscribe-subtitle">The Travel</div>
+          <div class="subscribe-text">
+            Get inspired! Receive travel discounts, tips and behind the scenes
+            stories.
+          </div>
+          <div class="subscribe_input-btn">
+            <input class="subscribe-input" placeholder="Your email address" />
+            <button class="subscribe-btn pointer">Subscribe</button>
+          </div>
+        </div>
+        <div class="subscribe-right_side">
+          <img
+            src="../assets/subscribe-images/emojione-v1_open-mailbox-with-lowered-flag.png"
+            alt="subscribe-image" />
+        </div>
+      </section>
+      <!-- end of subscribe section -->
+
+      <!--  footer -->
+      <footer class="footer flex">
+        <div class="footer-logo_socials">
+          <div class="footer-logo">
+            <img src="../assets/footer-images/Logo-dark.png" alt="logo" />
+          </div>
+          <div class="footer-socials flex">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+        <div class="footer-columns flex">
+          <div class="footer-col">
+            <div class="footer-col_title">Our Destinations</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Turtkul</div>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col_title">Our Destinations</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Turtkul</div>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col_title">Our Destinations</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Turtkul</div>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col_title">Our Destinations</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Turtkul</div>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col_title">Our Destinations</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Canada</div>
+            <div class="footer-col-item">Turtkul</div>
+          </div>
+        </div>
+      </footer>
+      <!-- end of footer -->
+    </div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

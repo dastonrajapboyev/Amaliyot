@@ -82,3 +82,9 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .subscribe-right_side img {
+    width: 100%;
+  }
+}

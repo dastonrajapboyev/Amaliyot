@@ -5,6 +5,7 @@
 @import url(./css/subscribe-section.css);
 @import url(./css/footer.css);
 @import url(./css/find-flights.css);
+@import url(./css/flights-detail.css);
 :root {
   --Font-family: "Montserrat", sans-serif;
   --White-color: #fff;

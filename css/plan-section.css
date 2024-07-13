@@ -29,6 +29,9 @@
   border-radius: 4px;
   padding: 8px 16px;
 }
+.plan-header_btn:hover {
+  background-color: #fff5f5cc;
+}
 .countries-cards_row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(389px, 1fr));
