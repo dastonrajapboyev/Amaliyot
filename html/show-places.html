@@ -56,39 +56,41 @@
             <div class="flights-inputs-row">
               <label for="time">From - To</label>
               <div class="first-input flex">
-                <input type="text" placeholder="Lahore - Karachi" />
                 <img
-                  src="../assets/icons/flights-icons/ion_swap-horizontal.svg"
+                  src="../assets/icons/flights-icons/dark-bed.svg"
+                  alt="icon" />
+                <input type="text" placeholder="Istanbul, Turkey" />
+              </div>
+            </div>
+            <div class="flights-inputs-row">
+              <label for="time">From - To</label>
+              <div class="first-input flex">
+                <input type="text" placeholder="Fri 12/2" />
+                <img
+                  src="../assets/find-stays-images/calendar.svg"
                   alt="icon" />
               </div>
             </div>
-
             <div class="flights-inputs-row">
-              <label for="fromTo">Trip</label>
-              <select id="fromTo" name="fromTo">
-                <option value="ny-la">New York to Los Angeles</option>
-                <option value="chi-mia">Chicago to Miami</option>
-                <option value="sf-sea">San Francisco to Seattle</option>
-                <option value="bos-dc">Boston to Washington D.C.</option>
-              </select>
+              <label for="time">From - To</label>
+              <div class="first-input flex">
+                <input type="text" placeholder="Sun 12/4" />
+                <img
+                  src="../assets/find-stays-images/calendar.svg"
+                  alt="icon" />
+              </div>
             </div>
-
             <div class="flights-inputs-row">
-              <label for="tripReturn">Depart- Return</label>
-              <select id="tripReturn" name="tripReturn">
-                <option value="oneway">One-way</option>
-                <option value="roundtrip">Round trip</option>
-              </select>
-            </div>
-
-            <div class="flights-inputs-row">
-              <label for="passengers">Passenger - Class</label>
-              <select id="passengers" name="passengers">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4plus">4 or more</option>
-              </select>
+              <label for="time">From - To</label>
+              <div class="first-input flex">
+                <img
+                  src="../assets/icons/find-stays-icons/User.svg"
+                  alt="icon" />
+                <input type="text" placeholder="1 room, 2 guests" />
+                <img
+                  src="../assets/icons/find-stays-icons/chevron_down.svg"
+                  alt="" />
+              </div>
             </div>
 
             <div class="search-icon">
@@ -102,7 +104,7 @@
       <!-- end of flights section -->
 
       <!--  -->
-      <div class="container">
+      <div class="container center">
         <aside class="filters">
           <h2>Filters</h2>
           <div class="filter-group">
@@ -195,240 +197,165 @@
             </div>
           </div>
         </aside>
-        <main class="results">
-          <div class="sort-options">
-            <button class="sort-button">Cheapest</button>
-            <button class="sort-button">Best</button>
-            <button class="sort-button">Quickest</button>
-            <button class="sort-button">Other sort</button>
-          </div>
-          <div class="showing-info">Showing 4 of 257 places</div>
-          <div class="flight-option">
-            <div class="flight-info">
+        <div class="hotel-cards">
+          <div class="hotel-card">
+            <div class="hotel-image">
               <img
-                src="../assets/flight-detail-images/emirates.png"
-                alt="Emirates Logo" />
-              <div class="flight-details">
-                <h3>Emirates</h3>
-                <p>12:00 pm - 01:28 pm</p>
-                <p>Non-stop</p>
-                <p>2h 28m</p>
-              </div>
+                src="../assets/show-places-images/01.png"
+                alt="CVK Park Bosphorus Hotel Istanbul" />
+              <span>9 images</span>
             </div>
-
-            <div class="flight-info-detail-right">
-              <div class="reviews-and-price">
-                <div class="num">4.2</div>
-                <div class="reviews">Very Good <span>54 reviews</span></div>
-                <div class="price">startting from <span>$104</span></div>
-              </div>
-              <div class="delivery-times">
-                <div class="times-and-place">
-                  <input type="checkbox" style="width: 20px" />
-                  <div class="times">12:00 pm - 01:28 pm</div>
-                  <div class="place-name">Emirates</div>
-                </div>
-                <div class="non-stop">non stop</div>
-                <div class="flying-time">
-                  2h 28m
-                  <span>EWR-BNA</span>
-                </div>
-              </div>
-              <div class="delivery-times">
-                <div class="times-and-place">
-                  <input type="checkbox" style="width: 20px" />
-                  <div class="times">12:00 pm - 01:28 pm</div>
-                  <div class="place-name">Emirates</div>
-                </div>
-                <div class="non-stop">non stop</div>
-                <div class="flying-time">
-                  2h 28m
-                  <span>EWR-BNA</span>
-                </div>
-              </div>
-              <hr />
-              <div class="likes-btn flex">
-                <div class="like pointer">
+            <div class="hotel-info_row">
+              <div class="hotel-info">
+                <h2>CVK Park Bosphorus Hotel Istanbul</h2>
+                <div class="location flex">
                   <img
-                    src="../assets/icons/flights-detail-icons/heart.svg"
-                    alt="icon" />
+                    src="../assets/icons/show-places-icons/Location.svg"
+                    alt="location icon" />
+                  <p>Gümüşsuyu Mah. İnönü Cad. No:8, Istanbul 34437</p>
                 </div>
-                <a href="./view-detail.html" class="like-btn pointer"
-                  >View Deals</a
-                >
+                <div class="rating">
+                  <span>★★★★★</span>
+                  <span>5 Star Hotel</span>
+                  <img
+                    src="../assets/icons/show-places-icons/cafe.svg"
+                    alt="cafe icon" />
+                  <span style="color: black">20+ Amenities</span>
+                </div>
+                <div class="features">
+                  <span>
+                    <span class="num">4.2</span> Very Good (371 reviews)</span
+                  >
+                </div>
+              </div>
+              <div class="price">
+                Starting from <strong>$240/night</strong> excl. tax
+              </div>
+              <div class="hotel-actions">
+                <button class="heart-button">❤</button>
+                <button class="hotel-actions_btn">View Place</button>
               </div>
             </div>
           </div>
-          <div class="flight-option">
-            <div class="flight-info">
+          <div class="hotel-card">
+            <div class="hotel-image">
               <img
-                src="../assets/flight-detail-images/dubai.png"
-                alt="Emirates Logo" />
-              <div class="flight-details">
-                <h3>Emirates</h3>
-                <p>12:00 pm - 01:28 pm</p>
-                <p>Non-stop</p>
-                <p>2h 28m</p>
-              </div>
+                src="../assets/show-places-images/02.png"
+                alt="CVK Park Bosphorus Hotel Istanbul" />
+              <span>9 images</span>
             </div>
-
-            <div class="flight-info-detail-right">
-              <div class="reviews-and-price">
-                <div class="num">4.2</div>
-                <div class="reviews">Very Good <span>54 reviews</span></div>
-                <div class="price">startting from <span>$104</span></div>
-              </div>
-              <div class="delivery-times">
-                <div class="times-and-place">
-                  <input type="checkbox" style="width: 20px" />
-                  <div class="times">12:00 pm - 01:28 pm</div>
-                  <div class="place-name">Emirates</div>
-                </div>
-                <div class="non-stop">non stop</div>
-                <div class="flying-time">
-                  2h 28m
-                  <span>EWR-BNA</span>
-                </div>
-              </div>
-              <div class="delivery-times">
-                <div class="times-and-place">
-                  <input type="checkbox" style="width: 20px" />
-                  <div class="times">12:00 pm - 01:28 pm</div>
-                  <div class="place-name">Emirates</div>
-                </div>
-                <div class="non-stop">non stop</div>
-                <div class="flying-time">
-                  2h 28m
-                  <span>EWR-BNA</span>
-                </div>
-              </div>
-              <hr />
-              <div class="likes-btn flex">
-                <div class="like pointer">
+            <div class="hotel-info_row">
+              <div class="hotel-info">
+                <h2>CVK Park Bosphorus Hotel Istanbul</h2>
+                <div class="location flex">
                   <img
-                    src="../assets/icons/flights-detail-icons/heart.svg"
-                    alt="icon" />
+                    src="../assets/icons/show-places-icons/Location.svg"
+                    alt="location icon" />
+                  <p>Gümüşsuyu Mah. İnönü Cad. No:8, Istanbul 34437</p>
                 </div>
-                <a href="./view-detail.html" class="like-btn pointer"
-                  >View Deals</a
-                >
+                <div class="rating">
+                  <span>★★★★★</span>
+                  <span>5 Star Hotel</span>
+                  <img
+                    src="../assets/icons/show-places-icons/cafe.svg"
+                    alt="cafe icon" />
+                  <span style="color: black">20+ Amenities</span>
+                </div>
+                <div class="features">
+                  <span>
+                    <span class="num">4.2</span> Very Good (371 reviews)</span
+                  >
+                </div>
+              </div>
+              <div class="price">
+                Starting from <strong>$240/night</strong> excl. tax
+              </div>
+              <div class="hotel-actions">
+                <button class="heart-button">❤</button>
+                <button class="hotel-actions_btn">View Place</button>
               </div>
             </div>
           </div>
-          <div class="flight-option">
-            <div class="flight-info">
+          <div class="hotel-card">
+            <div class="hotel-image">
               <img
-                src="../assets/flight-detail-images/qatar.png"
-                alt="Emirates Logo" />
-              <div class="flight-details">
-                <h3>Emirates</h3>
-                <p>12:00 pm - 01:28 pm</p>
-                <p>Non-stop</p>
-                <p>2h 28m</p>
-              </div>
+                src="../assets/show-places-images/03.png"
+                alt="CVK Park Bosphorus Hotel Istanbul" />
+              <span>9 images</span>
             </div>
-
-            <div class="flight-info-detail-right">
-              <div class="reviews-and-price">
-                <div class="num">4.2</div>
-                <div class="reviews">Very Good <span>54 reviews</span></div>
-                <div class="price">startting from <span>$104</span></div>
-              </div>
-              <div class="delivery-times">
-                <div class="times-and-place">
-                  <input type="checkbox" style="width: 20px" />
-                  <div class="times">12:00 pm - 01:28 pm</div>
-                  <div class="place-name">Emirates</div>
-                </div>
-                <div class="non-stop">non stop</div>
-                <div class="flying-time">
-                  2h 28m
-                  <span>EWR-BNA</span>
-                </div>
-              </div>
-              <div class="delivery-times">
-                <div class="times-and-place">
-                  <input type="checkbox" style="width: 20px" />
-                  <div class="times">12:00 pm - 01:28 pm</div>
-                  <div class="place-name">Emirates</div>
-                </div>
-                <div class="non-stop">non stop</div>
-                <div class="flying-time">
-                  2h 28m
-                  <span>EWR-BNA</span>
-                </div>
-              </div>
-              <hr />
-              <div class="likes-btn flex">
-                <div class="like pointer">
+            <div class="hotel-info_row">
+              <div class="hotel-info">
+                <h2>CVK Park Bosphorus Hotel Istanbul</h2>
+                <div class="location flex">
                   <img
-                    src="../assets/icons/flights-detail-icons/heart.svg"
-                    alt="icon" />
+                    src="../assets/icons/show-places-icons/Location.svg"
+                    alt="location icon" />
+                  <p>Gümüşsuyu Mah. İnönü Cad. No:8, Istanbul 34437</p>
                 </div>
-                <a href="./view-detail.html" class="like-btn pointer"
-                  >View Deals</a
-                >
+                <div class="rating">
+                  <span>★★★★★</span>
+                  <span>5 Star Hotel</span>
+                  <img
+                    src="../assets/icons/show-places-icons/cafe.svg"
+                    alt="cafe icon" />
+                  <span style="color: black">20+ Amenities</span>
+                </div>
+                <div class="features">
+                  <span>
+                    <span class="num">4.2</span> Very Good (371 reviews)</span
+                  >
+                </div>
+              </div>
+              <div class="price">
+                Starting from <strong>$240/night</strong> excl. tax
+              </div>
+              <div class="hotel-actions">
+                <button class="heart-button">❤</button>
+                <button class="hotel-actions_btn">View Place</button>
               </div>
             </div>
           </div>
-          <div class="flight-option">
-            <div class="flight-info">
+          <div class="hotel-card">
+            <div class="hotel-image">
               <img
-                src="../assets/flight-detail-images/etihad.png"
-                alt="Emirates Logo" />
-              <div class="flight-details">
-                <h3>Emirates</h3>
-                <p>12:00 pm - 01:28 pm</p>
-                <p>Non-stop</p>
-                <p>2h 28m</p>
-              </div>
+                src="../assets/show-places-images/04.png"
+                alt="CVK Park Bosphorus Hotel Istanbul" />
+              <span>9 images</span>
             </div>
-
-            <div class="flight-info-detail-right">
-              <div class="reviews-and-price">
-                <div class="num">4.2</div>
-                <div class="reviews">Very Good <span>54 reviews</span></div>
-                <div class="price">startting from <span>$104</span></div>
-              </div>
-              <div class="delivery-times">
-                <div class="times-and-place">
-                  <input type="checkbox" style="width: 20px" />
-                  <div class="times">12:00 pm - 01:28 pm</div>
-                  <div class="place-name">Emirates</div>
-                </div>
-                <div class="non-stop">non stop</div>
-                <div class="flying-time">
-                  2h 28m
-                  <span>EWR-BNA</span>
-                </div>
-              </div>
-              <div class="delivery-times">
-                <div class="times-and-place">
-                  <input type="checkbox" style="width: 20px" />
-                  <div class="times">12:00 pm - 01:28 pm</div>
-                  <div class="place-name">Emirates</div>
-                </div>
-                <div class="non-stop">non stop</div>
-                <div class="flying-time">
-                  2h 28m
-                  <span>EWR-BNA</span>
-                </div>
-              </div>
-              <hr />
-              <div class="likes-btn flex">
-                <div class="like pointer">
+            <div class="hotel-info_row">
+              <div class="hotel-info">
+                <h2>CVK Park Bosphorus Hotel Istanbul</h2>
+                <div class="location flex">
                   <img
-                    src="../assets/icons/flights-detail-icons/heart.svg"
-                    alt="icon" />
+                    src="../assets/icons/show-places-icons/Location.svg"
+                    alt="location icon" />
+                  <p>Gümüşsuyu Mah. İnönü Cad. No:8, Istanbul 34437</p>
                 </div>
-                <a href="./view-detail.html" class="like-btn pointer"
-                  >View Deals</a
-                >
+                <div class="rating">
+                  <span>★★★★★</span>
+                  <span>5 Star Hotel</span>
+                  <img
+                    src="../assets/icons/show-places-icons/cafe.svg"
+                    alt="cafe icon" />
+                  <span style="color: black">20+ Amenities</span>
+                </div>
+                <div class="features">
+                  <span>
+                    <span class="num">4.2</span> Very Good (371 reviews)</span
+                  >
+                </div>
+              </div>
+              <div class="price">
+                Starting from <strong>$240/night</strong> excl. tax
+              </div>
+              <div class="hotel-actions">
+                <button class="heart-button">❤</button>
+                <button class="hotel-actions_btn">View Place</button>
               </div>
             </div>
           </div>
-          <button class="results-btn">Show more results</button>
-        </main>
+          <button class="more-results_btn pointer">Show more results</button>
+        </div>
       </div>
 
       <!--  -->

@@ -47,6 +47,7 @@
 }
 .view-detail-right .price {
   font-size: 24px;
+  font-weight: bold;
   color: #ff5a5f;
 }
 .view-detail-right img {
@@ -133,6 +134,7 @@
 
 .book-now {
   background-color: var(--main-bg-color);
+  color: #000;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;

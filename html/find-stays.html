@@ -14,44 +14,131 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="wrapper wrapper-2">
-      <section class="hero nd-header">
-        <header class="header main-containe header-2">
-          <div class="flight-info flex">
-            <div class="find-flight flex pointer">
-              <img
-                src="../assets/icons/flights-icons/dark-plane.svg"
-                alt="find-flight icon" />
-              Find Flight
-            </div>
-            <div class="find-stays flex pointer">
-              <img
-                src="../assets/icons/flights-icons/dark-bed.svg"
-                alt="find-stays icon" />
-              Find Stays
-            </div>
+    <div class="wrapper find-stays_wrapper">
+      <!-- <section class="hero nd-header"> -->
+      <header class="header main-containe header-2">
+        <div class="flight-info flex">
+          <div class="find-flight flex pointer">
+            <img
+              src="../assets/icons/flights-icons/dark-plane.svg"
+              alt="find-flight icon" />
+            Find Flight
           </div>
-          <a href="/" class="logo pointer">
-            <img src="../assets/Logo-dark.png" alt="Logo" />
-          </a>
-          <div class="right-column flex">
-            <a class="sign-in" href="#signin">Sign In</a>
-            <a class="login" href="#login">Login</a>
+          <div class="find-stays flex pointer">
+            <img
+              src="../assets/icons/flights-icons/dark-bed.svg"
+              alt="find-stays icon" />
+            Find Stays
           </div>
-          <div class="burger-menu">
-            <div class="burger-icon">
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
-            </div>
-          </div>
-        </header>
-        <div class="hero-info-col">
-          <!-- <div class="hero-subtitle">Helping Others</div>
-          <div class="hero-title">Live & Travel</div>
-          <div class="hero-info">Special offers to suit your plan</div> -->
         </div>
-      </section>
+        <a href="/" class="logo pointer">
+          <img src="../assets/Logo-dark.png" alt="Logo" />
+        </a>
+        <div class="right-column flex">
+          <img
+            src="../assets/icons/find-stays-icons/heart.svg"
+            alt="heart icon" />
+          Favourites
+          <div class="user-prof pointer flex" id="userProfile">
+            <img
+              src="../assets/find-stays-images/user-image.png"
+              alt="user image" />
+            <p id="user">Jhon D.</p>
+          </div>
+        </div>
+
+        <div class="profile-info_modal" id="profileInfoModal">
+          <div class="user flex">
+            <div class="user-img">
+              <img
+                src="../assets/find-stays-images/user-image.png"
+                alt="user-image" />
+            </div>
+            <div class="user-info">
+              <div class="user-name">Jhon Doe.</div>
+              <div class="user-active">Online</div>
+            </div>
+          </div>
+          <hr />
+          <div class="account-settings">
+            <div class="account-item flex">
+              <div class="account-item_icon">
+                <img
+                  src="../assets/icons/find-stays-icons/User.svg"
+                  alt="icon" />
+              </div>
+              <div class="account-item_title">My account</div>
+              <div class="account-item_arrow_icon">
+                <img
+                  src="../assets/find-stays-images/chevron_forward.svg"
+                  alt="icon" />
+              </div>
+            </div>
+            <div class="account-item flex">
+              <div class="account-item_icon">
+                <img
+                  src="../assets/icons/find-stays-icons/card.svg"
+                  alt="icon" />
+              </div>
+              <div class="account-item_title">Payments</div>
+              <div class="account-item_arrow_icon">
+                <img
+                  src="../assets/find-stays-images/chevron_forward.svg"
+                  alt="icon" />
+              </div>
+            </div>
+
+            <div class="account-item flex">
+              <div class="account-item_icon">
+                <img
+                  src="../assets/icons/find-stays-icons/settings.svg"
+                  alt="icon" />
+              </div>
+              <div class="account-item_title">Settings</div>
+              <div class="account-item_arrow_icon">
+                <img
+                  src="../assets/find-stays-images/chevron_forward.svg"
+                  alt="icon" />
+              </div>
+            </div>
+            <hr />
+            <div class="account-item flex">
+              <div class="account-item_icon">
+                <img
+                  src="../assets/icons/find-stays-icons/Support.svg"
+                  alt="icon" />
+              </div>
+              <div class="account-item_title">Support</div>
+              <div class="account-item_arrow_icon">
+                <img
+                  src="../assets/find-stays-images/chevron_forward.svg"
+                  alt="icon" />
+              </div>
+            </div>
+
+            <div class="account-item flex">
+              <div class="account-item_icon">
+                <img
+                  src="../assets/icons/find-stays-icons/Logout.svg"
+                  alt="icon" />
+              </div>
+              <div class="account-item_title">Logout</div>
+            </div>
+          </div>
+        </div>
+        <div class="burger-menu">
+          <div class="burger-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="find-stays_main_img">
+        <img src="../assets/find-stays-images/main=img.png" alt="" />
+      </div>
+      <!-- </section> -->
 
       <!-- flights section -->
 
@@ -76,47 +163,49 @@
             <div class="flights-inputs-row">
               <label for="time">From - To</label>
               <div class="first-input flex">
-                <input type="text" placeholder="Lahore - Karachi" />
                 <img
-                  src="../assets/icons/flights-icons/ion_swap-horizontal.svg"
+                  src="../assets/icons/flights-icons/dark-bed.svg"
+                  alt="icon" />
+                <input type="text" placeholder="Istanbul, Turkey" />
+              </div>
+            </div>
+            <div class="flights-inputs-row">
+              <label for="time">From - To</label>
+              <div class="first-input flex">
+                <input type="text" placeholder="Fri 12/2" />
+                <img
+                  src="../assets/find-stays-images/calendar.svg"
                   alt="icon" />
               </div>
             </div>
-
             <div class="flights-inputs-row">
-              <label for="fromTo">Trip</label>
-              <select id="fromTo" name="fromTo">
-                <option value="ny-la">New York to Los Angeles</option>
-                <option value="chi-mia">Chicago to Miami</option>
-                <option value="sf-sea">San Francisco to Seattle</option>
-                <option value="bos-dc">Boston to Washington D.C.</option>
-              </select>
+              <label for="time">From - To</label>
+              <div class="first-input flex">
+                <input type="text" placeholder="Sun 12/4" />
+                <img
+                  src="../assets/find-stays-images/calendar.svg"
+                  alt="icon" />
+              </div>
             </div>
-
             <div class="flights-inputs-row">
-              <label for="tripReturn">Depart- Return</label>
-              <select id="tripReturn" name="tripReturn">
-                <option value="oneway">One-way</option>
-                <option value="roundtrip">Round trip</option>
-              </select>
-            </div>
-
-            <div class="flights-inputs-row">
-              <label for="passengers">Passenger - Class</label>
-              <select id="passengers" name="passengers">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4plus">4 or more</option>
-              </select>
+              <label for="time">From - To</label>
+              <div class="first-input flex">
+                <img
+                  src="../assets/icons/find-stays-icons/User.svg"
+                  alt="icon" />
+                <input type="text" placeholder="1 room, 2 guests" />
+                <img
+                  src="../assets/icons/find-stays-icons/chevron_down.svg"
+                  alt="" />
+              </div>
             </div>
           </form>
         </div>
         <div class="flights-card_footer">
           <button class="add-promo_codeBtn">+ Add Promo Code</button>
-          <a href="./show-flights.html" class="show-flights_btn">
+          <a href="./show-places.html" class="show-flights_btn">
             <img
-              src="../assets/icons/flights-icons/Paper Plane.svg"
+              src="../assets/icons/find-stays-icons/building.svg"
               alt="plane icon" />
             Show Flights
           </a>
@@ -124,21 +213,69 @@
       </section>
       <!-- end of flights section -->
 
-      <!-- address section -->
-
-      <section class="address-map_section">
-        <div class="plan-trip_header flex main-container">
+      <!-- plan trip section -->
+      <section class="plan-trip find-stays-cards">
+        <div class="plan-trip_header flex">
           <div class="plan-header_info">
-            <div class="plan-header-title">Let's go places together</div>
+            <div class="plan-header-title">Your recent searches</div>
             <div class="plan-header-text">
-              What people says about Golobe facilities
+              Search Flights & Places Hire to our most popular destinations
             </div>
           </div>
-          <div class="plan-header_btn pointer">See All</div>
+          <div class="plan-header_btn pointer">see more places</div>
         </div>
-        <img src="../assets/find-flights-section-img/map.png" alt="" />
+        <div class="countries-cards_row">
+          <div class="countries-card">
+            <img
+              src="../assets/plan-images/turkey.png"
+              alt="countries-card_img"
+              class="countries-card_img" />
+            <div class="countries_info">
+              <div class="countries-name">Istanbul, Turkey</div>
+              <div class="countries-info_items flex">
+                <div class="countries-item">325 places</div>
+              </div>
+            </div>
+          </div>
+          <div class="countries-card">
+            <img
+              src="../assets/find-stays-images/Frame 74.png"
+              alt="countries-card_img"
+              class="countries-card_img" />
+            <div class="countries_info">
+              <div class="countries-name">Istanbul, Turkey</div>
+              <div class="countries-info_items flex">
+                <div class="countries-item">325 places</div>
+              </div>
+            </div>
+          </div>
+          <div class="countries-card">
+            <img
+              src="../assets/find-stays-images/Frame 74 (1).png"
+              alt="countries-card_img"
+              class="countries-card_img" />
+            <div class="countries_info">
+              <div class="countries-name">Istanbul, Turkey</div>
+              <div class="countries-info_items flex">
+                <div class="countries-item">325 places</div>
+              </div>
+            </div>
+          </div>
+          <div class="countries-card">
+            <img
+              src="../assets/find-stays-images/Frame 74 (2).png"
+              alt="countries-card_img"
+              class="countries-card_img" />
+            <div class="countries_info">
+              <div class="countries-name">Istanbul, Turkey</div>
+              <div class="countries-info_items flex">
+                <div class="countries-item">325 places</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <!-- end of address section -->
+      <!-- end of plan trip section -->
 
       <!-- fall into travel section -->
 
@@ -310,9 +447,9 @@
       <!--  footer -->
       <footer class="footer flex">
         <div class="footer-logo_socials">
-          <a href="/" class="footer-logo">
+          <div class="footer-logo">
             <img src="../assets/footer-images/Logo-dark.png" alt="logo" />
-          </a>
+          </div>
           <div class="footer-socials flex">
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-twitter"></i>
@@ -360,6 +497,6 @@
       </footer>
       <!-- end of footer -->
     </div>
-    <script src="../js/main.js"></script>
+    <script src="../js/profile-modal.js"></script>
   </body>
 </html>

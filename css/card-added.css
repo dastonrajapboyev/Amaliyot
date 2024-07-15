@@ -1,0 +1,143 @@
+.boarding-pass {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1232px;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 40px;
+}
+.time-section,
+.details-section,
+.map-section {
+  padding: 20px;
+}
+.time-section {
+  background-color: #e8f5e9;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.P {
+  flex: 0 0 100%;
+  text-align: left;
+}
+.time-section p {
+  margin: 5px 0;
+}
+.details-section {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+}
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a5d6a7;
+  padding: 10px;
+  border-radius: 10px;
+}
+.details-header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.details-header div {
+  text-align: left;
+}
+.details-header div p {
+  margin: 0;
+}
+.details-header .class {
+  text-align: right;
+}
+.details-info {
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.details-info div {
+  display: flex;
+  gap: 4px;
+}
+.details-info div p {
+  /* margin: 5px 0; */
+  font-size: 14px;
+}
+.barcode {
+  margin-top: 40px;
+  flex: 0 0 100%;
+  justify-content: space-between;
+}
+.barcode p {
+  margin: 5px 0;
+}
+.card-profile-text_div {
+  display: flex;
+  flex-direction: column;
+}
+.map-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.map-section img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* terms */
+
+.terms {
+  margin-top: 80px;
+}
+.terms-header_title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.payment-box {
+  margin-top: 40px;
+}
+.payment-box_title {
+  font-size: 20px;
+  font-weight: 500;
+}
+.payments-items {
+  margin-top: 20px;
+  padding-left: 40px;
+}
+.payments-item {
+  margin-top: 20px;
+}
+
+.contact-us {
+  margin-top: 40px;
+}
+.contact-us_title {
+  font-size: 20px;
+  font-weight: 500;
+}
+.contact-us_texts {
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .boarding-pass {
+    grid-template-columns: 1fr;
+  }
+  .details-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .details-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .barcode {
+    text-align: left;
+  }
+}

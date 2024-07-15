@@ -7,6 +7,11 @@
 @import url(./css/find-flights.css);
 @import url(./css/flights-detail.css);
 @import url(./css/view-detail.css);
+@import url(./css/book-now.css);
+@import url(./css/add-new-card.css);
+@import url(./css/card-added.css);
+@import url(./css/find-stays.css);
+@import url(./css/show-places.css);
 :root {
   --Font-family: "Montserrat", sans-serif;
   --White-color: #fff;
