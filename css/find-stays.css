@@ -54,11 +54,13 @@
   gap: 16px;
 }
 .account-item {
+  cursor: pointer;
 }
 .account-item_icon {
 }
 .account-item_title {
   margin: 0 24px 0 8px;
+  cursor: pointer;
 }
 .account-item_arrow_icon {
   text-align: right;
