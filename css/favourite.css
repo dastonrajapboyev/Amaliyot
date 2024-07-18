@@ -1,0 +1,59 @@
+.favourites-header {
+  max-width: 1232px;
+  width: 100%;
+
+  margin: 98px auto 0 auto;
+}
+.container-favourite {
+  max-width: 1232px;
+  width: 100%;
+}
+.favourites-header h1 {
+  /* display: block; */
+}
+
+.favourites-flights-and-places {
+  justify-content: space-between;
+  gap: 20px;
+  border-radius: 12px;
+
+  box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.05);
+  padding: 16px 24px;
+  position: relative;
+  background: rgb(255, 255, 255);
+}
+.flex {
+}
+.favourite-flights {
+  width: 568px;
+}
+.favourite-place {
+  width: 568px;
+  /* border-bottom: 2px solid var(--main-bg-color); */
+}
+.border-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 620px;
+  height: 4px;
+  background-color: var(--main-bg-color);
+}
+@media screen and (max-width: 768px) {
+  .border-bottom {
+    display: none;
+  }
+}
+.hr-line-2 {
+  height: 40px;
+  width: 2px;
+  background-color: rgb(215, 226, 238);
+}
+.favourite-flights h3,
+.favourite-place h3 {
+  margin-left: 0;
+}
+
+.favourites-cards .hotel-card {
+  max-width: 100%;
+}

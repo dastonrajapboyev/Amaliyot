@@ -1,0 +1,107 @@
+li {
+  list-style: none;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.user-bg_img {
+  max-width: 1232px;
+  width: 100%;
+  margin: 0 auto;
+}
+.container-account {
+  max-width: 1232px;
+  width: 100%;
+  margin: 40px auto;
+}
+.column-1 {
+  flex: 0 0 75%;
+}
+
+.profile-header {
+  margin: -110px auto 0 auto;
+  text-align: center;
+  padding: 2rem 0;
+  width: 185px;
+  height: 241px;
+}
+.account-head .border-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30%;
+  height: 4px;
+  background-color: var(--main-bg-color);
+}
+.user-bg_img img {
+  width: 100%;
+}
+.profile-header img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.profile-header h2 {
+  margin-bottom: 0;
+}
+.nav-tabs {
+  justify-content: center;
+}
+.tab-content {
+  margin-top: 2rem;
+}
+.account-card {
+  border-radius: 16px;
+  box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.05);
+  padding: 32px 24px;
+  background: rgb(255, 255, 255);
+  margin-top: 1rem;
+}
+.account-card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.account-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.account-info span {
+  width: 70%;
+}
+.account-info button {
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: transparent;
+  padding: 8px 10px;
+  border: 1px solid var(--main-bg-color);
+  border-radius: 4px;
+}
+
+.user-image-div {
+  position: relative;
+}
+.user-edit-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(255, 134, 130);
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  border-radius: 50%;
+  width: 37px;
+  height: 37px;
+}
+.user-edit-icon img {
+  margin-top: 10px;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}

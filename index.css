@@ -12,6 +12,10 @@
 @import url(./css/card-added.css);
 @import url(./css/find-stays.css);
 @import url(./css/show-places.css);
+@import url(./css/view-places.css);
+@import url(./css/book-now-place.css);
+@import url(./css/favourite.css);
+@import url(./css/my-account.css);
 :root {
   --Font-family: "Montserrat", sans-serif;
   --White-color: #fff;

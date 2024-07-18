@@ -14,7 +14,7 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="wrapper wrapper-2 wrapper-3 view-detail">
+    <div class="wrapper wrapper-2 wrapper-3 container-favourite">
       <section class="hero nd-header">
         <header class="header main-containe header-2">
           <div class="flight-info flex">
@@ -35,12 +35,12 @@
             <img src="../assets/Logo-dark.png" alt="Logo" />
           </a>
           <div class="right-column flex">
-            <a href="../html/favourites.html" class="pointer flex">
+            <div class="pointer flex">
               <img
                 src="../assets/icons/find-stays-icons/heart.svg"
                 alt="heart icon" />
               Favourites
-            </a>
+            </div>
             <div class="user-prof pointer flex" id="userProfile">
               <img
                 src="../assets/find-stays-images/user-image.png"
@@ -138,164 +138,147 @@
         </header>
       </section>
 
-      <div class="container">
-        <div class="view-detail_header">
-          <div class="view-detail-left">
-            <div class="breadcrumbs">
-              <a href="#">Turkey</a> &gt; <a href="#">Istanbul</a> &gt;
-              <a href="#" style="color: black"
-                >CVK Park Bosphorus Hotel Istanbul</a
-              >
-            </div>
-            <div class="heading">
-              <div>
-                <h1>Emirates A380 Airbus</h1>
-                <div class="location">
-                  Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437
-                </div>
-              </div>
-            </div>
+      <div class="favourites-header">
+        <h1>Favourites</h1>
+        <br />
+        <div class="favourites-flights-and-places flex">
+          <div class="favourite-flights">
+            <h3>Flights</h3>
+            <p>2 marked</p>
           </div>
-          <div class="view-detail-right">
-            <div class="price" style="color: #000">$240</div>
-            <div class="iconsandBtn flex">
+          <p class="hr-line-2"></p>
+          <div class="favourite-place">
+            <h3>Places</h3>
+            <p>3 marked</p>
+          </div>
+          <div class="border-bottom"></div>
+        </div>
+      </div>
+
+      <!--  -->
+      <div class="container center">
+        <div class="hotel-cards favourites-cards">
+          <div class="hotel-card">
+            <div class="hotel-image">
               <img
-                src="../assets/icons/view-detail-icons/Share.svg"
-                alt="icon" />
-              <a href="#" class="book-now">Download</a>
+                src="../assets/show-places-images/01.png"
+                alt="CVK Park Bosphorus Hotel Istanbul" />
+              <span>9 images</span>
             </div>
-          </div>
-        </div>
-
-        <div class="boarding-pass">
-          <div class="time-section">
-            <p>12:00 pm</p>
-            <p>Newark(EWR)</p>
-            <img
-              src="../assets/card-added-img/plane.png"
-              alt="Plane Icon"
-              style="height: 50px" />
-            <p class="P">12:00 pm</p>
-            <p>Newark(EWR)</p>
-          </div>
-          <div class="details-section">
-            <div class="details-header">
-              <div class="flex" style="flex-wrap: wrap">
-                <img src="../assets/profile-img.png" alt="" />
-                <p>James Doe</p>
-                <p style="flex: 0 0 100%">Boarding Pass N°123</p>
-              </div>
-              <div class="class">
-                <p>Business Class</p>
-              </div>
-            </div>
-            <div class="details-info flex">
-              <div>
-                <img
-                  src="../assets/icons/card-added-icons/card-added-icon-1.svg"
-                  alt="Barcode" />
-                <div class="card-profile-text_div">
-                  <p>Date</p>
-                  <p>Newark(EWR)</p>
+            <div class="hotel-info_row">
+              <div class="hotel-info">
+                <h2>CVK Park Bosphorus Hotel Istanbul</h2>
+                <div class="location flex">
+                  <img
+                    src="../assets/icons/show-places-icons/Location.svg"
+                    alt="location icon" />
+                  <p>Gümüşsuyu Mah. İnönü Cad. No:8, Istanbul 34437</p>
+                </div>
+                <div class="rating">
+                  <span>★★★★★</span>
+                  <span>5 Star Hotel</span>
+                  <img
+                    src="../assets/icons/show-places-icons/cafe.svg"
+                    alt="cafe icon" />
+                  <span style="color: black">20+ Amenities</span>
+                </div>
+                <div class="features">
+                  <span>
+                    <span class="num">4.2</span> Very Good (371 reviews)</span
+                  >
                 </div>
               </div>
-              <div>
-                <img
-                  src="../assets/icons/card-added-icons/icon-2.svg"
-                  alt="Barcode" />
-                <div class="card-profile-text_div">
-                  <p>Flight time</p>
-                  <p>12:00</p>
-                </div>
+              <div class="price">
+                Starting from <strong>$240/night</strong> excl. tax
               </div>
-              <div>
-                <img
-                  src="../assets/icons/card-added-icons/icon-3.svg"
-                  alt="Barcode" />
-                <div class="card-profile-text_div">
-                  <p>Gate</p>
-                  <p>A12</p>
-                </div>
-              </div>
-              <div>
-                <img
-                  src="../assets/icons/card-added-icons/icon-4.svg"
-                  alt="Barcode" />
-                <div class="card-profile-text_div">
-                  <p>Seat</p>
-                  <p>12B</p>
-                </div>
-              </div>
-              <div class="barcode flex">
-                <p>EK</p>
-                <p>ABC12345</p>
-                <img
-                  src="../assets/card-added-img/code-img.png"
-                  alt="Barcode"
-                  style="height: 40px" />
+              <div class="hotel-actions">
+                <button class="heart-button">❤</button>
+                <a href="#" class="hotel-actions_btn">View Place</a>
               </div>
             </div>
           </div>
-          <div class="map-section">
-            <img src="../assets/card-added-img/map-image.png" alt="Map" />
+          <div class="hotel-card">
+            <div class="hotel-image">
+              <img
+                src="../assets/show-places-images/02.png"
+                alt="CVK Park Bosphorus Hotel Istanbul" />
+              <span>9 images</span>
+            </div>
+            <div class="hotel-info_row">
+              <div class="hotel-info">
+                <h2>CVK Park Bosphorus Hotel Istanbul</h2>
+                <div class="location flex">
+                  <img
+                    src="../assets/icons/show-places-icons/Location.svg"
+                    alt="location icon" />
+                  <p>Gümüşsuyu Mah. İnönü Cad. No:8, Istanbul 34437</p>
+                </div>
+                <div class="rating">
+                  <span>★★★★★</span>
+                  <span>5 Star Hotel</span>
+                  <img
+                    src="../assets/icons/show-places-icons/cafe.svg"
+                    alt="cafe icon" />
+                  <span style="color: black">20+ Amenities</span>
+                </div>
+                <div class="features">
+                  <span>
+                    <span class="num">4.2</span> Very Good (371 reviews)</span
+                  >
+                </div>
+              </div>
+              <div class="price">
+                Starting from <strong>$240/night</strong> excl. tax
+              </div>
+              <div class="hotel-actions">
+                <button class="heart-button">❤</button>
+                <a href="#" class="hotel-actions_btn">View Place</a>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="terms">
-          <div class="terms-header_title">Terms and Conditions</div>
-          <div class="payment-box">
-            <div class="payment-box_title">Payments</div>
-            <ul class="payments-items">
-              <li class="payments-item">
-                If you are purchasing your ticket using a debit or credit card
-                via the Website, we will process these payments via the
-                automated secure common payment gateway which will be subject to
-                fraud screening purposes.
-              </li>
-              <li class="payments-item">
-                If you do not supply the correct card billing address and/or
-                cardholder information, your booking will not be confirmed and
-                the overall cost may increase. We reserve the right to cancel
-                your booking if payment is declined for any reason or if you
-                have supplied incorrect card information. If we become aware of,
-                or is notified of, any fraud or illegal activity associated with
-                the payment for the booking, the booking will be cancelled and
-                you will be liable for all costs and expenses arising from such
-                cancellation, without prejudice to any action that may be taken
-                against us.
-              </li>
-              <li class="payments-item">
-                Golobe may require the card holder to provide additional payment
-                verification upon request by either submitting an online form or
-                visiting the nearest Golobe office, or at the airport at the
-                time of check-in. Golobe reserves the right to deny boarding or
-                to collect a guarantee payment (in cash or from another credit
-                card) if the card originally used for the purchase cannot be
-                presented by the cardholder at check-in or when collecting the
-                tickets, or in the case the original payment has been withheld
-                or disputed by the card issuing bank. Credit card details are
-                held in a secured environment and transferred through an
-                internationally accepted system.
-              </li>
-            </ul>
-          </div>
-
-          <div class="contact-us">
-            <div class="contact-us_title">Contact Us</div>
-            <div class="contact-us_texts">
-              <p>
-                If you have any questions about our Website or our Terms of Use,
-                please contact:
-              </p>
-              <p>Golobe Group Q.C.S.C</p>
-              <p>Golobe Tower</p>
-              <p>P.O. Box: 22550</p>
-              <p>Doha, State of Qatar</p>
-              <p>Further contact details can be found at golobe.com/help</p>
+          <div class="hotel-card">
+            <div class="hotel-image">
+              <img
+                src="../assets/show-places-images/03.png"
+                alt="CVK Park Bosphorus Hotel Istanbul" />
+              <span>9 images</span>
+            </div>
+            <div class="hotel-info_row">
+              <div class="hotel-info">
+                <h2>CVK Park Bosphorus Hotel Istanbul</h2>
+                <div class="location flex">
+                  <img
+                    src="../assets/icons/show-places-icons/Location.svg"
+                    alt="location icon" />
+                  <p>Gümüşsuyu Mah. İnönü Cad. No:8, Istanbul 34437</p>
+                </div>
+                <div class="rating">
+                  <span>★★★★★</span>
+                  <span>5 Star Hotel</span>
+                  <img
+                    src="../assets/icons/show-places-icons/cafe.svg"
+                    alt="cafe icon" />
+                  <span style="color: black">20+ Amenities</span>
+                </div>
+                <div class="features">
+                  <span>
+                    <span class="num">4.2</span> Very Good (371 reviews)</span
+                  >
+                </div>
+              </div>
+              <div class="price">
+                Starting from <strong>$240/night</strong> excl. tax
+              </div>
+              <div class="hotel-actions">
+                <button class="heart-button">❤</button>
+                <a href="#" class="hotel-actions_btn">View Place</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!--  -->
 
       <!-- subscribe section -->
       <section class="subscribe">

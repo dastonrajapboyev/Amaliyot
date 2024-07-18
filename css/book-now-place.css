@@ -1,0 +1,16 @@
+.book-now-place-card_info {
+  padding: 16px 32px;
+  border: 1px solid rgb(141, 211, 187);
+  border-radius: 8px;
+}
+.book-now-place-card_info div,
+h3 {
+  margin-left: 24px;
+}
+.p-style {
+  color: rgb(17, 34, 17);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0%;
+}

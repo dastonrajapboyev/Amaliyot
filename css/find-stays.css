@@ -1,5 +1,5 @@
 .find-stays_wrapper .header-2 {
-  padding: 22px 100px;
+  padding: 22px 20px;
   display: flex;
   align-items: center;
   position: relative;
@@ -39,14 +39,7 @@
   padding-left: 10px;
   padding-right: 10px;
 }
-.user-img {
-}
-.user-info {
-}
-.user-name {
-}
-.user-active {
-}
+
 .account-settings {
   padding-top: 24px;
   display: flex;
@@ -56,8 +49,7 @@
 .account-item {
   cursor: pointer;
 }
-.account-item_icon {
-}
+
 .account-item_title {
   margin: 0 24px 0 8px;
   cursor: pointer;
@@ -71,4 +63,9 @@
   grid-template-columns: repeat(auto-fit, minmax(247px, 1fr));
   grid-gap: 20px;
   margin-top: 40px;
+}
+.favourite-link {
+  display: flex;
+  color: #000;
+  gap: 10px;
 }

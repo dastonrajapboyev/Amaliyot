@@ -35,8 +35,98 @@
             <img src="../assets/Logo-dark.png" alt="Logo" />
           </a>
           <div class="right-column flex">
-            <a class="sign-in" href="#signin">Sign In</a>
-            <a class="login" href="#login">Login</a>
+            <a href="../html/favourites.html" class="pointer flex">
+              <img
+                src="../assets/icons/find-stays-icons/heart.svg"
+                alt="heart icon" />
+              Favourites
+            </a>
+            <div class="user-prof pointer flex" id="userProfile">
+              <img
+                src="../assets/find-stays-images/user-image.png"
+                alt="user image" />
+              <p id="user">Jhon D.</p>
+            </div>
+          </div>
+
+          <div class="profile-info_modal" id="profileInfoModal">
+            <div class="user flex">
+              <div class="user-img">
+                <img
+                  src="../assets/find-stays-images/user-image.png"
+                  alt="user-image" />
+              </div>
+              <div class="user-info">
+                <div class="user-name">Jhon Doe.</div>
+                <div class="user-active">Online</div>
+              </div>
+            </div>
+            <hr />
+            <div class="account-settings">
+              <div class="account-item flex">
+                <div class="account-item_icon">
+                  <img
+                    src="../assets/icons/find-stays-icons/User.svg"
+                    alt="icon" />
+                </div>
+                <div class="account-item_title">My account</div>
+                <div class="account-item_arrow_icon">
+                  <img
+                    src="../assets/find-stays-images/chevron_forward.svg"
+                    alt="icon" />
+                </div>
+              </div>
+              <div class="account-item flex">
+                <div class="account-item_icon">
+                  <img
+                    src="../assets/icons/find-stays-icons/card.svg"
+                    alt="icon" />
+                </div>
+                <div class="account-item_title">Payments</div>
+                <div class="account-item_arrow_icon">
+                  <img
+                    src="../assets/find-stays-images/chevron_forward.svg"
+                    alt="icon" />
+                </div>
+              </div>
+
+              <div class="account-item flex">
+                <div class="account-item_icon">
+                  <img
+                    src="../assets/icons/find-stays-icons/settings.svg"
+                    alt="icon" />
+                </div>
+                <div class="account-item_title">Settings</div>
+                <div class="account-item_arrow_icon">
+                  <img
+                    src="../assets/find-stays-images/chevron_forward.svg"
+                    alt="icon" />
+                </div>
+              </div>
+              <hr />
+              <div class="account-item flex">
+                <div class="account-item_icon">
+                  <img
+                    src="../assets/icons/find-stays-icons/Support.svg"
+                    alt="icon" />
+                </div>
+                <div class="account-item_title">Support</div>
+                <div class="account-item_arrow_icon">
+                  <img
+                    src="../assets/find-stays-images/chevron_forward.svg"
+                    alt="icon" />
+                </div>
+              </div>
+
+              <div class="account-item flex">
+                <div class="account-item_icon">
+                  <img
+                    src="../assets/icons/find-stays-icons/Logout.svg"
+                    alt="icon" />
+                </div>
+                <div class="account-item_title">Logout</div>
+              </div>
+            </div>
           </div>
           <div class="burger-menu">
             <div class="burger-icon">
@@ -508,6 +598,7 @@
       </footer>
       <!-- end of footer -->
     </div>
-    <script src="../js/main.js"></script>
+    <!-- <script src="../js/main.js"></script> -->
+    <script src="../js/profile-modal.js"></script>
   </body>
 </html>
