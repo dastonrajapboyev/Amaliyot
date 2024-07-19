@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../index.css" />
+  </head>
+  <body>
+    <div class="container-login">
+      <div class="login-form">
+        <div class="logo">
+          <img src="../assets/login-images/logo.png" alt="Golobe Logo" />
+        </div>
+        <h1>Login</h1>
+        <p>Login to access your Golobe account</p>
+        <form>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value="john.doe@gmail.com"
+              required />
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <div class="flex">
+              <input type="password" id="password" name="password" required />
+              <button type="button" class="toggle-password">
+                <img src="../assets/login-images/Fill=True.svg" alt="icon" />
+              </button>
+            </div>
+          </div>
+          <div class="options">
+            <label>
+              <input type="checkbox" name="remember" /> Remember me
+            </label>
+            <a href="#" class="forgot-password">Forgot Password</a>
+          </div>
+          <button type="submit" class="login-btn">Login</button>
+          <p class="signup">Don't have an account? <a href="#">Sign up</a></p>
+        </form>
+        <div class="login-section">
+          <div class="or-line flex">
+            <hr />
+            <p>Or</p>
+            <hr />
+          </div>
+          <div class="book-now-icons">
+            <div>
+              <img
+                src="../assets/icons/book-now-icons/facebook.svg"
+                alt="icon" />
+            </div>
+            <div>
+              <img
+                src="../assets/icons/book-now-icons/flat-color-icons_google.svg"
+                alt="icon" />
+            </div>
+            <div>
+              <img src="../assets/icons/book-now-icons/apple.svg" alt="icon" />
+            </div>
+          </div>
+        </div>
+        <!-- </form> -->
+      </div>
+      <div class="image">
+        <img src="../assets/login-images/01.png" alt="Hotel Image" />
+      </div>
+    </div>
+
+    <script src="../js/password-toggle.js"></script>
+  </body>
+</html>

@@ -16,6 +16,10 @@
 @import url(./css/book-now-place.css);
 @import url(./css/favourite.css);
 @import url(./css/my-account.css);
+@import url(./css/account-history.css);
+@import url(./css/account-stays.css);
+@import url(./css/payment-methods.css);
+@import url(./css/login.css);
 :root {
   --Font-family: "Montserrat", sans-serif;
   --White-color: #fff;

@@ -48,3 +48,5 @@ window.addEventListener("click", function (event) {
 profileModal.addEventListener("click", function (event) {
   event.stopPropagation();
 });
+
+//  ------------------ password toggle

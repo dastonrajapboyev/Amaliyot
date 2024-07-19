@@ -139,6 +139,13 @@
       </section>
       <div class="user-bg_img">
         <img src="../assets/my-accoun-images/bg-img.png" alt="image" />
+        <div class="upload-icon_btn">
+          <img
+            src="../assets/accoun-history-images/upload-icon.svg"
+            alt="icon"
+            class="upload-icon" />
+          <p>Upload new cover</p>
+        </div>
       </div>
       <div class="profile-header">
         <div class="user-image-div">
@@ -164,74 +171,234 @@
             <div class="border-bottom"></div>
             <p class="hr-line-2"></p>
             <div class="favourite-place">
-              <a href="../html/account-history.html ">History</a>
+              <h3>History</h3>
             </div>
             <p class="hr-line-2"></p>
             <div class="favourite-place">
-              <a href="../html/account-payment-methods.html">Payment methods</a>
+              <h3>Payment methods</h3>
             </div>
           </div>
         </div>
 
-        <div class="tab-content" id="myTabContent">
+        <div class="tickets-row">
           <div class="favourites-header">
-            <h1>Account</h1>
+            <div class="s-between flex">
+              <h1>Tickets/Bookings</h1>
+              <h3>
+                Upcoming
+                <img
+                  src="../assets/accoun-history-images/chevron-down.png"
+                  alt="icon" />
+              </h3>
+            </div>
+            <br />
+            <div
+              class="favourites-flights-and-places flex account-stays_header">
+              <div class="favourite-flights">
+                <h3>Flights</h3>
+                <p>2 marked</p>
+              </div>
+              <p class="hr-line-2"></p>
+              <div class="favourite-place">
+                <h3>Places</h3>
+                <p>3 marked</p>
+              </div>
+              <div class="border-bottom border-bottom-2"></div>
+            </div>
           </div>
-          <div
-            class="tab-pane fade show active account-card"
-            id="account"
-            role="tabpanel"
-            aria-labelledby="account-tab">
-            <div class="card">
-              <div class="card-body">
-                <div class="account-info">
-                  <div class="column">
-                    <strong>Name:</strong>
-                    <span>John Doe</span>
+          <div class="ticket">
+            <div class="ticket-info">
+              <img
+                src="../assets/accoun-history-images/account-stays-card-img.png"
+                alt="Emirates Logo"
+                class="airline-logo" />
+              <div class="flight-details-account">
+                <div class="time flex">
+                  <div class="flex-direction">
+                    <span>Check-In</span>
+                    <span><strong>Thur, Dec 8</strong></span>
                   </div>
-                  <button class="btn btn-outline-primary btn-sm">Change</button>
+                  <span>&mdash;</span>
+                  <div class="flex-direction">
+                    <span>Check Out</span>
+                    <span><strong>Fri, Dec 9</strong></span>
+                  </div>
                 </div>
-                <div class="account-info">
-                  <div class="column column-1">
-                    <strong>Email:</strong>
-                    <span>john.doe@gmail.com</span>
+
+                <div class="hor-line"></div>
+                <div class="additional-info flex">
+                  <div class="flex-direction">
+                    <div class="flex">
+                      <img
+                        src="../assets/accoun-history-images/date-icon.png"
+                        alt="date icon" />
+                      <span
+                        >Date <br />
+                        <strong> 12-11-22 </strong>
+                      </span>
+                    </div>
+                    <div class="flex">
+                      <img
+                        src="../assets/accoun-history-images/time-icon.png"
+                        alt="date icon" />
+                      <span>
+                        Flight time
+                        <br />
+                        <strong>Newark(EWR) </strong>
+                      </span>
+                    </div>
                   </div>
-                  <button class="add-email_btn btn btn-outline-primary btn-sm">
-                    Add another email
-                  </button>
-                  <button class="btn btn-outline-primary btn-sm">Change</button>
-                </div>
-                <div class="account-info">
-                  <div class="column">
-                    <strong>Password:</strong>
-                    <span>***********</span>
+                  <div class="flex-direction">
+                    <div class="flex">
+                      <img
+                        src="../assets/accoun-history-images/gate-icon.png"
+                        alt="date icon" />
+                      <span
+                        >Gate <br />
+                        <strong> A12 </strong>
+                      </span>
+                    </div>
                   </div>
-                  <button class="btn btn-outline-primary btn-sm">Change</button>
-                </div>
-                <div class="account-info">
-                  <div class="column">
-                    <strong>Phone number:</strong>
-                    <span>+1 000-000-0000</span>
-                  </div>
-                  <button class="btn btn-outline-primary btn-sm">Change</button>
-                </div>
-                <div class="account-info">
-                  <div class="column">
-                    <strong>Address:</strong>
-                    <span
-                      >St 32 main downtown, Los Angeles, California, USA</span
-                    >
-                  </div>
-                  <button class="btn btn-outline-primary btn-sm">Change</button>
-                </div>
-                <div class="account-info">
-                  <div class="column">
-                    <strong>Date of birth:</strong>
-                    <span>01-01-1992</span>
-                  </div>
-                  <button class="btn btn-outline-primary btn-sm">Change</button>
                 </div>
               </div>
+            </div>
+            <div class="ticket-actions">
+              <button class="download-ticket">Download Ticket</button>
+              <button class="next_btn">
+                <img
+                  src="../assets/accoun-history-images/chevron_forward.svg"
+                  alt="icon" />
+              </button>
+            </div>
+          </div>
+          <div class="ticket">
+            <div class="ticket-info">
+              <img
+                src="../assets/accoun-history-images/account-stays-card-img.png"
+                alt="Emirates Logo"
+                class="airline-logo" />
+              <div class="flight-details-account">
+                <div class="time flex">
+                  <div class="flex-direction">
+                    <span>Check-In</span>
+                    <span><strong>Thur, Dec 8</strong></span>
+                  </div>
+                  <span>&mdash;</span>
+                  <div class="flex-direction">
+                    <span>Check Out</span>
+                    <span><strong>Fri, Dec 9</strong></span>
+                  </div>
+                </div>
+
+                <div class="hor-line"></div>
+                <div class="additional-info flex">
+                  <div class="flex-direction">
+                    <div class="flex">
+                      <img
+                        src="../assets/accoun-history-images/date-icon.png"
+                        alt="date icon" />
+                      <span
+                        >Date <br />
+                        <strong> 12-11-22 </strong>
+                      </span>
+                    </div>
+                    <div class="flex">
+                      <img
+                        src="../assets/accoun-history-images/time-icon.png"
+                        alt="date icon" />
+                      <span>
+                        Flight time
+                        <br />
+                        <strong>Newark(EWR) </strong>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="flex-direction">
+                    <div class="flex">
+                      <img
+                        src="../assets/accoun-history-images/gate-icon.png"
+                        alt="date icon" />
+                      <span
+                        >Gate <br />
+                        <strong> A12 </strong>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ticket-actions">
+              <button class="download-ticket">Download Ticket</button>
+              <button class="next_btn">
+                <img
+                  src="../assets/accoun-history-images/chevron_forward.svg"
+                  alt="icon" />
+              </button>
+            </div>
+          </div>
+          <div class="ticket">
+            <div class="ticket-info">
+              <img
+                src="../assets/accoun-history-images/account-stays-card-img.png"
+                alt="Emirates Logo"
+                class="airline-logo" />
+              <div class="flight-details-account">
+                <div class="time flex">
+                  <div class="flex-direction">
+                    <span>Check-In</span>
+                    <span><strong>Thur, Dec 8</strong></span>
+                  </div>
+                  <span>&mdash;</span>
+                  <div class="flex-direction">
+                    <span>Check Out</span>
+                    <span><strong>Fri, Dec 9</strong></span>
+                  </div>
+                </div>
+
+                <div class="hor-line"></div>
+                <div class="additional-info flex">
+                  <div class="flex-direction">
+                    <div class="flex">
+                      <img
+                        src="../assets/accoun-history-images/date-icon.png"
+                        alt="date icon" />
+                      <span
+                        >Date <br />
+                        <strong> 12-11-22 </strong>
+                      </span>
+                    </div>
+                    <div class="flex">
+                      <img
+                        src="../assets/accoun-history-images/time-icon.png"
+                        alt="date icon" />
+                      <span>
+                        Flight time
+                        <br />
+                        <strong>Newark(EWR) </strong>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="flex-direction">
+                    <div class="flex">
+                      <img
+                        src="../assets/accoun-history-images/gate-icon.png"
+                        alt="date icon" />
+                      <span
+                        >Gate <br />
+                        <strong> A12 </strong>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ticket-actions">
+              <button class="download-ticket">Download Ticket</button>
+              <button class="next_btn">
+                <img
+                  src="../assets/accoun-history-images/chevron_forward.svg"
+                  alt="icon" />
+              </button>
             </div>
           </div>
         </div>

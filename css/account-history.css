@@ -1,0 +1,159 @@
+.ticket {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.flex-direction {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.user-bg_img {
+  position: relative;
+}
+.upload-icon_btn {
+  padding: 16px;
+  display: flex;
+  gap: 4px;
+  border-radius: 4px;
+  align-items: center;
+  width: 200px;
+  background-color: var(--main-bg-color);
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  cursor: pointer;
+}
+.upload-icon_btn img {
+  width: 16px;
+  height: 16px;
+}
+.container-account .border-bottom {
+  left: 35%;
+}
+.tickets-row .border-bottom {
+  left: 0;
+}
+.s-between {
+  justify-content: space-between;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+.flex-direction .flex {
+  gap: 8px;
+  row-gap: 10px;
+}
+.hor-line {
+  height: 48px;
+  width: 1px;
+  background-color: rgb(215, 226, 238);
+  margin: 20px;
+}
+
+.ticket-info {
+  display: flex;
+  align-items: center;
+}
+
+.airline-logo {
+  width: 50px;
+  margin-right: 20px;
+}
+
+.tickets-row {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  max-width: 1232px;
+  margin: 18px auto;
+}
+.flight-details-account {
+  display: flex;
+  flex-grow: 1;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.additional-info {
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  font-size: 0.9em;
+}
+
+.ticket-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-align: right;
+}
+
+.download-ticket {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid var(--main-bg-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.download-ticket:hover,
+.next_btn:hover {
+  background-color: var(--main-bg-color);
+}
+
+.next_btn {
+  background-color: transparent;
+  border: 1px solid var(--main-bg-color);
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  .ticket {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .ticket-info {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .flight-details-account {
+    flex-wrap: wrap;
+  }
+
+  .time,
+  .additional-info {
+    display: block;
+  }
+
+  .time span {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flight-details-account {
+    flex-wrap: wrap;
+  }
+  .tickets-row {
+    padding: 0 20px;
+  }
+  .ticket-actions {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
