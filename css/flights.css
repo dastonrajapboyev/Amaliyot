@@ -125,4 +125,26 @@ input {
   #fromTo {
     width: 300px;
   }
+  .flights-card {
+    position: relative;
+    margin: -30px auto 0 auto;
+    padding: 22px;
+    width: 100%;
+  }
+
+  .flights-inputs-row .first-input {
+    max-width: 300px;
+    width: 100%;
+  }
+  .flights-card_inputs form {
+    /* max-width: 300px;
+    width: 100%; */
+    margin: 0 auto;
+  }
+  .flights-card_footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 32px;
+  }
 }

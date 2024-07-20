@@ -50,6 +50,7 @@ li {
   justify-content: center;
 }
 .tab-content {
+  padding: 0 20px;
   margin-top: 2rem;
 }
 .account-card {

@@ -91,7 +91,7 @@ body {
   flex: 0 0 45%;
 }
 .logo {
-  flex: 0 0 20%;
+  flex: 0 0 35%;
 }
 .find-flight,
 .find-stays {
@@ -185,7 +185,7 @@ body {
 .burger-menu {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .burger-menu {
     display: block;
     z-index: 200;
