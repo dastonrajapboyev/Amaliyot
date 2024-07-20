@@ -1,0 +1,22 @@
+.sign-up-img img {
+  width: 488px;
+}
+.sign-up_register {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.sign-up_inputs input {
+  width: 308px;
+}
+
+@media screen and (max-width: 768px) {
+  .sign-up_register {
+    justify-content: center;
+    gap: 24px;
+  }
+  .sign-up_inputs input {
+    width: 100%;
+  }
+}

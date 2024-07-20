@@ -175,9 +175,6 @@
   .image-block {
     grid-template-columns: repeat(2, 1fr);
   }
-  .header-2 .flight-info {
-    margin-top: 40px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -190,6 +187,9 @@
     margin: 0 auto;
     background-size: auto;
     background-position: right;
+  }
+  .travel-card {
+    width: 90%;
   }
   .nd-header .header-2 {
     padding: 20px;

@@ -9,7 +9,7 @@
   width: 100%;
 }
 .favourites-header h1 {
-  /* display: block; */
+  padding: 0 20px;
 }
 
 .favourites-flights-and-places {
@@ -29,7 +29,6 @@
 }
 .favourite-place {
   width: 568px;
-  /* border-bottom: 2px solid var(--main-bg-color); */
 }
 .border-bottom {
   position: absolute;
@@ -38,11 +37,6 @@
   width: 620px;
   height: 4px;
   background-color: var(--main-bg-color);
-}
-@media screen and (max-width: 768px) {
-  .border-bottom {
-    display: none;
-  }
 }
 .hr-line-2 {
   height: 40px;
@@ -56,4 +50,10 @@
 
 .favourites-cards .hotel-card {
   max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .border-bottom {
+    display: none;
+  }
 }

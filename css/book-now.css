@@ -164,5 +164,18 @@ input[type="text"] {
 }
 .book-now-icons .span {
   grid-column: span 3;
+  max-width: 600px;
   width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .booking-card,
+  .breadcrumbs {
+    max-width: 790px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .book-now_wrapper {
+    flex-direction: column-reverse;
+  }
 }

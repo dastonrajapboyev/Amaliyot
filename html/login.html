@@ -9,9 +9,9 @@
   <body>
     <div class="container-login">
       <div class="login-form">
-        <div class="logo">
+        <a href="/" class="logo">
           <img src="../assets/login-images/logo.png" alt="Golobe Logo" />
-        </div>
+        </a>
         <h1>Login</h1>
         <p>Login to access your Golobe account</p>
         <form>
@@ -26,7 +26,7 @@
           </div>
           <div class="input-group">
             <label for="password">Password</label>
-            <div class="flex">
+            <div class="flex password-container">
               <input type="password" id="password" name="password" required />
               <button type="button" class="toggle-password">
                 <img src="../assets/login-images/Fill=True.svg" alt="icon" />
@@ -37,10 +37,14 @@
             <label>
               <input type="checkbox" name="remember" /> Remember me
             </label>
-            <a href="#" class="forgot-password">Forgot Password</a>
+            <a href="./forgot-password.html" class="forgot-password"
+              >Forgot Password</a
+            >
           </div>
           <button type="submit" class="login-btn">Login</button>
-          <p class="signup">Don't have an account? <a href="#">Sign up</a></p>
+          <p class="signup">
+            Don't have an account? <a href="./sign-up.html">Sign up</a>
+          </p>
         </form>
         <div class="login-section">
           <div class="or-line flex">
@@ -66,9 +70,17 @@
         </div>
         <!-- </form> -->
       </div>
-      <div class="image">
-        <img src="../assets/login-images/01.png" alt="Hotel Image" />
+      <div class="slider">
+        <div class="slides image">
+          <img src="../assets/login-images/01.png" alt="Hotel Image" />
+          <img src="../assets/login-images/02.png" alt="Hotel Image" />
+        </div>
+        <div class="dots" id="dots-container"></div>
       </div>
+      <!-- <div class="image">
+        <img src="../assets/login-images/01.png" alt="Hotel Image" />
+        <img src="../assets/login-images/02.png" alt="Hotel Image" />
+      </div> -->
     </div>
 
     <script src="../js/password-toggle.js"></script>

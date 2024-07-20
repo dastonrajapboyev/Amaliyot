@@ -75,6 +75,7 @@
   height: auto;
   border-radius: 10px;
   margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .policies {
@@ -110,11 +111,6 @@
   margin-right: 20px;
 }
 
-/* .policies .icons div img {
-  width: 100%;
-  height: auto;
-  margin-right: 5px;
-} */
 .policies-div {
   display: flex;
 }
@@ -152,6 +148,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 1232px;
+  width: 100%;
   margin: 40px auto;
   padding: 20px;
 }
@@ -242,7 +239,7 @@
   background-color: #d7e2ee;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .detail-flight-info {
     flex-direction: column;
     align-items: flex-start;
